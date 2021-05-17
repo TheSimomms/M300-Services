@@ -3,12 +3,17 @@
 H2 good to know
 
 Cleensheet zur Erstellung des markdowns
-[I'm an inline-style link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
 
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | [I'm an inline-style link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)     |    $1 |
 
+| für was        | Links          |
+| ------------- |:-------------:|
+| col 3 is      | right-aligned |
+| Fehlermeldung      | centered      |
+| Cleensheet | [Link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)     |
+
+
+Bei dieser Fehlermeldung muss man folgend handeln. 
+![fehlermeldung](https://github.com/TheSimomms/M300-Services/tree/main/images/fehlermeldung.png)
+
+Man muss in das Lokal Markdown gehen und die hidden Folder aktivieren. Dann sieht man den ".git" Ordner in diesem Ordner gibt es das "index.lock" file dieses muss gelöscht werden danach funktioniert es wieder.
