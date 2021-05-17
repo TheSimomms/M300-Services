@@ -14,6 +14,8 @@ Cleensheet zur Erstellung des markdowns
 
 
 Bei dieser Fehlermeldung muss man folgend handeln. 
-![fehlermeldung](https://github.com/TheSimomms/M300-Services/tree/main/images/fehlermeldung.png)
+![fehlermeldung][logo]
+logo:(https://github.com/TheSimomms/M300-Services/tree/main/images/fehlermeldung.png"bild1")
 
-Man muss in das Lokal Markdown gehen und die hidden Folder aktivieren. Dann sieht man den ".git" Ordner in diesem Ordner gibt es das "index.lock" file dieses muss gelöscht werden danach funktioniert es wieder.
+Man muss in das Lokal Markdown gehen und die hidden Folder aktivieren.
+Dann sieht man den ".git" Ordner in diesem Ordner gibt es das "index.lock" file dieses muss gelöscht werden danach funktioniert es wieder.
