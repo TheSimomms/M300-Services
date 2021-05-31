@@ -41,4 +41,4 @@ Dann sieht man den ".git" Ordner in diesem Ordner gibt es das "index.lock" file 
 
 ## 25 Infrastruktur-Sicherheit
 
-[25 - Infrastruktur-Sicherheit] (https://github.com/tbz-it/M300/tree/master/25-Sicherheit#m300---25-infrastruktur-sicherheit)
+[25 - Infrastruktur-Sicherheit](https://github.com/tbz-it/M300/tree/master/25-Sicherheit#m300---25-infrastruktur-sicherheit)
