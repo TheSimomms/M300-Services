@@ -53,6 +53,75 @@ git clone https://github.com/TheSimomms/M300-Services/tree/main/LB1
 vagrant up
 ```
 
+## Dokumentation
+
+Ich habe zuerst das Resposentory kopiert von [Rapid7](https://github.com/rapid7/metasploitable3/)
+Als zweites habe ich dann das Vagrant File angepasst mit den passenden IP Adressen.
+Wo ich das zuhause zum ersten mal aufgesetzt habe hatte ich ein mega Problem mit den IP Adressen.
+Das Ziel von mir ist es mit einem Vagrant Skript Kalilinux und Metaspoitable aufzusetzen wo was Ip Problem automatisch behoben ist.<br>
+
+Doch dann bei vagrant up gab es ein paar Fehlermeldungen<br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung1.png" width=50% height=50%> <br>
+
+Doch dieses Problem wurde behoben.
+Bei dem folgendem Problem gibt es nur diese Lösung das man den Link von Rapid7 verwendet. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung2.png" width=50% height=50%> <br>
+Der Grund dafür ist dass Rapid7 keine Privatperson ist sondern ein Unternehmen und die haben in ihrer Cloud Objekte abgelegt die zwingend Notwendig sind dafür das es funktioniert.
+
+Zugleich habe ich lange an einem Fehler gewesen. Das Problem war, dass ich nicht pushen konnte. <br>
+Bis ich gemerkt habe, das der Antivirus ein paar Files gelöscht hat ging auch eine Zeit vorgangen.
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung1.png" width=50% height=50%> <br>
+
+Doch meine LB1 ist keine 1:1 Kopie von Rapid7. <br>
+Ich habe Kali_linux eingebaut, Kali_linux wird installiert mit Zusatz Funktionen.
+Zugleich habe ich gleich das Netzwerk Problem gelöst wo eigentlich extra noch eingebaut wäre.
+
+In diesem Abschnitt ist die Kalilinux installation abgelegt <br>
+NICHT FERTIG <br>
+```
+Vagrant.configure("2") do |config|
+  config.vm.define "kali" do |kali|
+
+		kali.vm.box = "kalilinux/rolling"
+		kali.vm.box_check_update = true
+		kali.vm.hostname = "kali-linux"
+   
+		kali.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
+		virtualbox__intnet:"intnet"
+		kali.vm.network "public_network"
+		end
+  
+			kali.vm.provider "virtualbox" do |vb|
+			vb.gui = false
+			vb.memory = "6144"
+	
+			kali.vm.provision :shell, inline: "C:\\startup\\Kali.bat"
+			end
+	end
+end
+
+```
+
+Wenn man genau Hinschaut wird noch eine Shell ausgeführt <br>
+
+```
+SHELL
+
+```
+
+Zugleich habe ich bei der Windows Version und die Ubuntu Version in das gleiche Private Netzwerk gesteckt wie Kali.
+
+```
+win2k8.vm.network "private_network", ip: "172.16.1.10", netmask:"255.255.255.0",
+virtualbox__intnet:"intnet"
+
+ub1404.vm.network "private_network", ip: '172.16.1.11', netmask:"255.255.255.0",
+virtualbox__intnet:"intnet"
+```
+
+
+
+
 ## Das Problem an diesem Resposentory
 
 Wieso wäre es eine sehr schlechte Idee dieses Resposentory Public zu schalten?
@@ -76,20 +145,8 @@ Das soll ich machen, da wenn man ein fertige Umgebung bekommt nicht weiss was ma
 Wenn man jedes Tool selbst installiert weiss die Person was sie macht und setzt sich aktiv auseinander.
 Wenn alles gegeben wird macht die Person irgendwas und das ist sehr schlecht. <br>
 
-## Dokumentation
 
-Ich habe zuerst das Resposentory kopiert von [Rapid7](https://github.com/rapid7/metasploitable3/)
-Als zweites habe ich dann das Vagrant File angepasst mit den passenden IP Adressen.
-Wo ich das zuhause zum ersten mal aufgesetzt habe hatte ich ein mega Problem mit den IP Adressen.
-Das Ziel von mir ist es mit einem Vagrant Skript Kalilinux und Metaspoitable aufzusetzen wo was Ip Problem automatisch behoben ist.<br>
 
-Doch dann bei vagrant up gab es ein paar Fehlermeldungen<br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung1.png" width=50% height=50%> <br>
-
-Doch dieses Problem wurde behoben.
-Bei dem folgendem Problem gibt es nur diese Lösung das man den Link von Rapid7 verwendet. <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung2.png" width=50% height=50%> <br>
-Der Grund dafür ist dass Rapid7 keine Privatperson ist sondern ein Unternehmen und die haben in ihrer Cloud Objekte abgelegt die zwingend Notwendig sind dafür das es funktioniert.
 
 
 
