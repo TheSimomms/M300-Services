@@ -69,7 +69,7 @@ Dann die Vier Befehle auszuführen mit Ordner erstellen etc ist auch nicht mehr 
 Ohne grossem Wissen hat man ein 100% fähiges Resposentory mit den richtigen Adapter Einstellungen. <br>
 Wo ich das zum ersten mal gemacht habe hatte ich mega Probleme aber nicht an den Metaspoitable 3 Machinen.
 Sondern das Problem war bei Kali Linux Adapter Einstellungen und bei der installationen.<br>
-<div style="text-align:center"><img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Kali_linux.png" width=500 height=100%></div><br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Kali_linux.png" width=500 height=100%><br>
 Das wird alles gemacht. Ich habe viele Quellen zugehört wie man das am besten lernt. 
 Doch ein Punkt stach sehr heraus. Bei Kali Linux hat einen Befehl der alle Tools löscht.
 Das soll ich machen, da wenn man ein fertige Umgebung bekommt nicht weiss was man macht.
@@ -84,11 +84,11 @@ Wo ich das zuhause zum ersten mal aufgesetzt habe hatte ich ein mega Problem mit
 Das Ziel von mir ist es mit einem Vagrant Skript Kalilinux und Metaspoitable aufzusetzen wo was Ip Problem automatisch behoben ist.<br>
 
 Doch dann bei vagrant up gab es ein paar Fehlermeldungen<br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung1.png" width=100% height=100%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung1.png" width=50% height=50%> <br>
 
 Doch dieses Problem wurde behoben.
 Bei dem folgendem Problem gibt es nur diese Lösung das man den Link von Rapid7 verwendet. <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung2.png" width=100% height=100%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung2.png" width=50% height=50%> <br>
 Der Grund dafür ist dass Rapid7 keine Privatperson ist sondern ein Unternehmen und die haben in ihrer Cloud Objekte abgelegt die zwingend Notwendig sind dafür das es funktioniert.
 
 
