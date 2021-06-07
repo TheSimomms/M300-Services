@@ -53,10 +53,35 @@ git clone https://github.com/TheSimomms/M300-Services/tree/main/LB1
 vagrant up
 ```
 
+## Das Problem an diesem Resposentory
+
+Wieso wäre es eine sehr schlechte Idee dieses Resposentory Public zu schalten?
+Aus zwei Gründen, erstens das ist eigentlich alles kopiert von Rapid7 ich habe nur features hinzugerfügt. <br>
+Also aus Lizenz Gründen würde ich das nicht machen. <br>
+<br>
+
+Wenn der Punkt wegfallen würde würde ich es immernoch nicht freigeben.
+Metaspoitable 3 ist dafür da hacken zu lernen. Es wird zugleich auch noch Kali Linux ready gemacht mit den Richtigen Adapter Einstellungen. <br>
+Die Hürde die extra in den Weg gelegt wird das es eben nicht alle einfach so lernen wäre viel einfacher. <br>
+Vagrant und VirtualBox zu installieren ist keine herausforderung für niemanden. Herunterladen installieren fertig.
+Packer ist nicht sehr schwer zu installieren, es ist etwas "anspruchsvoller" aber nicht schwer. <br>
+Dann die Vier Befehle auszuführen mit Ordner erstellen etc ist auch nicht mehr schwer. 
+Ohne grossem Wissen hat man ein 100% fähiges Resposentory mit den richtigen Adapter Einstellungen. <br>
+Wo ich das zum ersten mal gemacht habe hatte ich mega Probleme aber nicht an den Metaspoitable 3 Machinen.
+Sondern das Problem war bei Kali Linux Adapter Einstellungen und bei der installationen.
+Das wird alles gemacht. Ich habe viele Quellen zugehört wie man das am besten lernt. <br>
+Doch ein Punkt stach sehr heraus. Bei Kali Linux hat einen Befehl der alle Tools löscht.
+Das soll ich machen, da wenn man ein fertige Umgebung bekommt nicht weiss was man macht.
+Wenn man jedes Tool selbst installiert weiss die Person was sie macht und setzt sich aktiv auseinander.
+Wenn alles gegeben wird macht die Person irgendwas und das ist sehr schlecht.
+
+
+
+
 
 ## Dokumentation
 
-Ich habe zuerst das Resposentory kopiert von Rapid7 [Link](https://github.com/rapid7/metasploitable3/)
+Ich habe zuerst das Resposentory kopiert von [Rapid7](https://github.com/rapid7/metasploitable3/)
 Als zweites habe ich dann das Vagrant File angepasst mit den passenden IP Adressen.
 Wo ich das zuhause zum ersten mal aufgesetzt habe hatte ich ein mega Problem mit den IP Adressen.
 Das Ziel von mir ist es mit einem Vagrant Skript Kalilinux und Metaspoitable aufzusetzen wo was Ip Problem automatisch behoben ist.<br>
@@ -66,7 +91,7 @@ Doch dann bei vagrant up gab es ein paar Fehlermeldungen<br>
 
 Doch dieses Problem wurde behoben.
 Bei dem folgendem Problem gibt es nur diese Lösung das man den Link von Rapid7 verwendet. <br>
-<img src="/LB1/images/Fehlermeldung2.png" width=100 height=100> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung2.png" width=100% height=100%> <br>
 Der Grund dafür ist dass Rapid7 keine Privatperson ist sondern ein Unternehmen und die haben in ihrer Cloud Objekte abgelegt die zwingend Notwendig sind dafür das es funktioniert.
 
 
