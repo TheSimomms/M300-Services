@@ -26,7 +26,6 @@ Deswegen wird auch eine Windows eine Testversion installiert. Es wird mit vagran
 
 * Die Handhabung ist einfach und Dynamisch. Es ist einfach in die Konfiguration einzugreifen.
 
-
 ## Voraussetzungen
 
 Damit Metaspoitable 3 funktioniert muss einiges vorhher eingerichtet werden.
@@ -53,5 +52,24 @@ cd metasploitable3
 Invoke-WebRequest -Uri "" -OutFile "Vagrantfile"
 vagrant up
 ```
+
+
+## Dokumentation
+
+Ich habe zuerst das Resposentory kopiert von Rapid7 [Link](https://github.com/rapid7/metasploitable3/)
+Als zweites habe ich dann das Vagrant File angepasst mit den passenden IP Adressen.
+Wo ich das zuhause zum ersten mal aufgesetzt habe hatte ich ein mega Problem mit den IP Adressen.
+Das Ziel von mir ist es mit einem Vagrant Skript Kalilinux und Metaspoitable aufzusetzen wo was Ip Problem automatisch behoben ist.
+
+Doch dann bei vagrant up gab es ein paar Fehlermeldungen
+[Fehlermeldung1]
+
+Doch dieses Problem wurde behoben.
+Bei dem folgendem Problem gibt es nur diese Lösung das man den Link von Rapid7 verwendet. 
+[Fehlermeldung2]
+Der Grund dafür ist dass Rapid7 keine Privatperson ist sondern ein Unternehmen und die haben in ihrer Cloud Objekte abgelegt die zwingend Notwendig sind dafür das es funktioniert.
+
+
+
 
 
