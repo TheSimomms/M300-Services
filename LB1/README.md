@@ -68,16 +68,13 @@ Packer ist nicht sehr schwer zu installieren, es ist etwas "anspruchsvoller" abe
 Dann die Vier Befehle auszuführen mit Ordner erstellen etc ist auch nicht mehr schwer. 
 Ohne grossem Wissen hat man ein 100% fähiges Resposentory mit den richtigen Adapter Einstellungen. <br>
 Wo ich das zum ersten mal gemacht habe hatte ich mega Probleme aber nicht an den Metaspoitable 3 Machinen.
-Sondern das Problem war bei Kali Linux Adapter Einstellungen und bei der installationen.
-Das wird alles gemacht. Ich habe viele Quellen zugehört wie man das am besten lernt. <br>
+Sondern das Problem war bei Kali Linux Adapter Einstellungen und bei der installationen.<br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/kali_linux.png" width=100% height=100%>
+Das wird alles gemacht. Ich habe viele Quellen zugehört wie man das am besten lernt. 
 Doch ein Punkt stach sehr heraus. Bei Kali Linux hat einen Befehl der alle Tools löscht.
 Das soll ich machen, da wenn man ein fertige Umgebung bekommt nicht weiss was man macht.
 Wenn man jedes Tool selbst installiert weiss die Person was sie macht und setzt sich aktiv auseinander.
-Wenn alles gegeben wird macht die Person irgendwas und das ist sehr schlecht.
-
-
-
-
+Wenn alles gegeben wird macht die Person irgendwas und das ist sehr schlecht. <br>
 
 ## Dokumentation
 
