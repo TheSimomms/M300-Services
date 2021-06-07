@@ -49,7 +49,7 @@ Windows users:
 ```
 mkdir metasploitable3
 cd metasploitable3
-Invoke-WebRequest -Uri "" -OutFile "Vagrantfile"
+git clone https://github.com/TheSimomms/M300-Services/tree/main/LB1
 vagrant up
 ```
 
@@ -59,14 +59,14 @@ vagrant up
 Ich habe zuerst das Resposentory kopiert von Rapid7 [Link](https://github.com/rapid7/metasploitable3/)
 Als zweites habe ich dann das Vagrant File angepasst mit den passenden IP Adressen.
 Wo ich das zuhause zum ersten mal aufgesetzt habe hatte ich ein mega Problem mit den IP Adressen.
-Das Ziel von mir ist es mit einem Vagrant Skript Kalilinux und Metaspoitable aufzusetzen wo was Ip Problem automatisch behoben ist.
+Das Ziel von mir ist es mit einem Vagrant Skript Kalilinux und Metaspoitable aufzusetzen wo was Ip Problem automatisch behoben ist.<br>
 
-Doch dann bei vagrant up gab es ein paar Fehlermeldungen
-[Fehlermeldung1]
+Doch dann bei vagrant up gab es ein paar Fehlermeldungen<br>
+<img src="/LB1/images/Fehlermeldung1.png" width=100 height=100> <br>
 
 Doch dieses Problem wurde behoben.
-Bei dem folgendem Problem gibt es nur diese Lösung das man den Link von Rapid7 verwendet. 
-[Fehlermeldung2]
+Bei dem folgendem Problem gibt es nur diese Lösung das man den Link von Rapid7 verwendet. <br>
+<img src="/LB1/images/Fehlermeldung2.png" width=100 height=100> <br>
 Der Grund dafür ist dass Rapid7 keine Privatperson ist sondern ein Unternehmen und die haben in ihrer Cloud Objekte abgelegt die zwingend Notwendig sind dafür das es funktioniert.
 
 
