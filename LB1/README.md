@@ -1,6 +1,6 @@
 #Metaspoitable 3
 
-## Was ist Metaspoitable 3?
+## Was ist Metaspoitable 3
 Wie auch in Metaspoitable 2, ist auch die dritte Version sind unzählige, zum Teil auch absichtlich falsch und unsicher Konfigurierte Dienste eingerichtet.
 Dazu gehören Webserver, FTPserver, Tomcat, Glassfish, MySQL, phpMyAdmin, WordPress, ein SSH Server und viele mehr.
 Die volle Liste ist hier zu finden.
@@ -16,7 +16,7 @@ Grundlegend ist der Unterschied zwischen Metaspoitable 3 und 2 folgende:
 Im Vergleich zu Metaspoitable 2 sind die Hardware Anforderungen um einiges höher. Bei beiden Vms werden jeweils zwei Gigabytes Arbeitsspeicher zugeordnet.
 Der Temporärer Platz für Dateien beträgt 30 Gigabytes
 
-## Wieso gibt es keine Metaspoitable 3 Image?
+## Wieso gibt es keine Metaspoitable 3 Image
 
 Es wäre um einiges leichter Metaspoitable 3 als Image zu haben.
 Es gibt auf Github viele die Metaspoitable 3 gemacht haben und die Haubtgründe sind immer die gleichen.
@@ -48,8 +48,8 @@ Download:
 
 Windows users:
 ```
-mkdir metasploitable3-workspace
-cd metasploitable3-workspace
+mkdir metasploitable3
+cd metasploitable3
 Invoke-WebRequest -Uri "" -OutFile "Vagrantfile"
 vagrant up
 ```
