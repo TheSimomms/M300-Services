@@ -62,7 +62,7 @@ Wo ich das zuhause zum ersten mal aufgesetzt habe hatte ich ein mega Problem mit
 Das Ziel von mir ist es mit einem Vagrant Skript Kalilinux und Metaspoitable aufzusetzen wo was Ip Problem automatisch behoben ist.<br>
 
 Doch dann bei vagrant up gab es ein paar Fehlermeldungen<br>
-<img src="/LB1/images/Fehlermeldung1.png" width=100 height=100> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung1.png" width=100 height=100> <br>
 
 Doch dieses Problem wurde behoben.
 Bei dem folgendem Problem gibt es nur diese Lösung das man den Link von Rapid7 verwendet. <br>
