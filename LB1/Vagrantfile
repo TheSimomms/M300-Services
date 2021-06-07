@@ -1,9 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
-
 Vagrant.configure("2") do |config|
   config.vm.synced_folder '.', '/vagrant', disabled: true
   config.vm.define "ub1404" do |ub1404|
@@ -12,8 +9,8 @@ Vagrant.configure("2") do |config|
     config.ssh.username = 'vagrant'
     config.ssh.password = 'vagrant'
 
-    ub1404.vm.network "private_network", ip: '172.28.128.3'
-
+    ub1404.vm.network "private_network", ip: '172.16.1.11', netmask:"255.255.255.0"
+	virtualbox__intnet: "Simon"
     ub1404.vm.provider "virtualbox" do |v|
       v.name = "Metasploitable3-ub1404"
       v.memory = 2048
@@ -29,11 +26,11 @@ Vagrant.configure("2") do |config|
     win2k8.winrm.retry_delay = 10
 
     win2k8.vm.network "private_network", ip: "172.16.1.10", netmask:"255.255.255.0"
-
-	win2k8.vm.network "public_network"
+    virtualbox__intnet: "Simon"
+	
 
     win2k8.vm.provider "libvirt" do |v|
-      v.memory = 4096
+      v.memory = 5120
       v.cpus = 2
       v.video_type = 'qxl'
       v.input :type => "tablet", :bus => "usb"
@@ -41,12 +38,32 @@ Vagrant.configure("2") do |config|
       v.channel :type => 'spicevmc', :target_name => 'com.redhat.spice.0', :target_type => 'virtio'
       v.graphics_type = "spice"
 
-      # Enable Hyper-V enlightenments: https://blog.wikichoon.com/2014/07/enabling-hyper-v-enlightenments-with-kvm.html
-      v.hyperv_feature :name => 'stimer',  :state => 'on'
-      v.hyperv_feature :name => 'relaxed', :state => 'on'
-      v.hyperv_feature :name => 'vapic',   :state => 'on'
-      v.hyperv_feature :name => 'synic',   :state => 'on'
     end
+	
+	config.vm.define "kali" do |kali|
+
+  kali.vm.box = "kalilinux/rolling"
+  kali.vm.box_check_update = true
+  kali.vm.hostname = "kali-linux"
+    
+	kali.vm.network "private_network", ip: "172.16.1.10", netmask:"255.255.255.0"
+    virtualbox__intnet: "Simon"
+	kali.vm.network "public_network"
+	
+  kali.vm.provider "virtualbox" do |vb|
+	vb.gui = false
+     vb.memory = "6144"
+	
+	config.vm.provision :shell, inline: "C:\\startup\\Kali.bat"
+	
+	apt update
+	apt upgrade
+	apt install 
+	
+	SHELL
+	
+	end
+
 
     # Configure Firewall to open up vulnerable services
     case ENV['MS3_DIFFICULTY']
