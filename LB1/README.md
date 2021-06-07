@@ -69,7 +69,7 @@ Dann die Vier Befehle auszuführen mit Ordner erstellen etc ist auch nicht mehr 
 Ohne grossem Wissen hat man ein 100% fähiges Resposentory mit den richtigen Adapter Einstellungen. <br>
 Wo ich das zum ersten mal gemacht habe hatte ich mega Probleme aber nicht an den Metaspoitable 3 Machinen.
 Sondern das Problem war bei Kali Linux Adapter Einstellungen und bei der installationen.<br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Kali_linux.png" width=300 height=300>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Kali_linux.png" width=500 height=100%><br>
 Das wird alles gemacht. Ich habe viele Quellen zugehört wie man das am besten lernt. 
 Doch ein Punkt stach sehr heraus. Bei Kali Linux hat einen Befehl der alle Tools löscht.
 Das soll ich machen, da wenn man ein fertige Umgebung bekommt nicht weiss was man macht.
