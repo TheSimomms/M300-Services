@@ -77,7 +77,7 @@ Ich habe Kali_linux eingebaut, Kali_linux wird installiert mit Zusatz Funktionen
 Zugleich habe ich gleich das Netzwerk Problem gelöst wo eigentlich extra noch eingebaut wäre.
 
 In diesem Abschnitt ist die Kalilinux installation abgelegt <br>
-NICHT FERTIG <br>
+<br>
 ```
 Vagrant.configure("2") do |config|
   config.vm.define "kali" do |kali|
