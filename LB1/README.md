@@ -70,7 +70,7 @@ Der Grund dafür ist dass Rapid7 keine Privatperson ist sondern ein Unternehmen 
 
 Zugleich habe ich lange an einem Fehler gewesen. Das Problem war, dass ich nicht pushen konnte. <br>
 Bis ich gemerkt habe, das der Antivirus ein paar Files gelöscht hat ging auch eine Zeit vorgangen.
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung3.png" width=50% height=50%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung3.png" width=40% height=40%> <br>
 
 Doch meine LB1 ist keine 1:1 Kopie von Rapid7. <br>
 Ich habe Kali_linux eingebaut, Kali_linux wird installiert mit Zusatz Funktionen.
