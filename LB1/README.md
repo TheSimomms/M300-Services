@@ -272,8 +272,6 @@ Wenn alles gegeben wird macht die Person irgendwas und das ist sehr schlecht. <b
 
 * [Shell](https://www.vagrantup.com/docs/provisioning/shell)
 
-* [Gist](https://gist.github.com/)
-
 * [Kali](https://app.vagrantup.com/kalilinux/boxes/rolling)
 
 
