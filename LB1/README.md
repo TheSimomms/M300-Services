@@ -1,14 +1,14 @@
 ## Inhaltsverzeichnis
 
-[Journal](https://github.com/mc-b/M300/tree/master/10-Toolumgebung#m300---10-toolumgebung)
+* [Journal](https://github.com/mc-b/M300/tree/master/10-Toolumgebung#m300---10-toolumgebung)
 
-[Was ist Metaspoitable 3](https://github.com/TheSimomms/M300-Services/tree/main/LB1#was-ist-metaspoitable-3)
+* [Was ist Metaspoitable 3](https://github.com/TheSimomms/M300-Services/tree/main/LB1#was-ist-metaspoitable-3)
 
-[Wieso gibt es keine Metaspoitable 3 Image](https://github.com/TheSimomms/M300-Services/tree/main/LB1#wieso-gibt-es-keine-metaspoitable-3-image)
+* [Wieso gibt es keine Metaspoitable 3 Image](https://github.com/TheSimomms/M300-Services/tree/main/LB1#wieso-gibt-es-keine-metaspoitable-3-image)
 
-[Dokumentation](https://github.com/TheSimomms/M300-Services/tree/main/LB1#dokumentation)
+* [Dokumentation](https://github.com/TheSimomms/M300-Services/tree/main/LB1#dokumentation)
 
-[Das Problem an diesem Resposentory](https://github.com/TheSimomms/M300-Services/tree/main/LB1#das-problem-an-diesem-resposentory)
+* [Das Problem an diesem Resposentory](https://github.com/TheSimomms/M300-Services/tree/main/LB1#das-problem-an-diesem-resposentory)
 
 ## Journal
 
@@ -116,7 +116,7 @@ Zugleich habe ich lange an einem Fehler gewesen. Das Problem war, dass ich nicht
 Bis ich gemerkt habe, das der Antivirus ein paar Files gelöscht hat ging auch eine Zeit vorgangen.
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung3.png" width=50% height=50%> <br>
 
-Doch meine LB1 ist keine 1:1 Kopie von Rapid7. <br>
+Doch meine LB1 ist keine 1:1 Kopie von [Rapid7](https://github.com/rapid7/metasploitable3/). <br>
 Ich habe Kali_linux eingebaut, Kali_linux wird installiert mit Zusatz Funktionen.
 Zugleich habe ich gleich das Netzwerk Problem gelöst wo eigentlich extra noch eingebaut wäre.
 
@@ -126,18 +126,26 @@ Vagrant.configure("2") do |config|
   config.vm.define "kali" do |kali|
 
 	 kali.vm.box = "kalilinux/rolling"
+	 #Updates wenn vorhanden soll es installiert werden
 	 kali.vm.box_check_update = true
+	 #hostname
 	 kali.vm.hostname = "kali-linux"
    
+	#Adapter Einstellungen plus Ip und Subnetzmakse
 	 kali.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
+	 #Bei der nötigen Variante muss das Netz benannt werden. 
 	 virtualbox__intnet:"intnet"
+	 #Noch ein Adapter hinzufügen wo aber ins Internet geht für die Installationen
 	 kali.vm.network "public_network"
 	 end
-  
+		#Kali Linud verwendet "VirtualBox"
 		kali.vm.provider "virtualbox" do |vb|
+		#Beim aufstarten wird kein GUI geladen mit dem Bootmenu
 		vb.gui = false
+		#Memory zuweisung.
 		vb.memory = "6144"
 	
+		# in diesem Bat File wird definiert, was alles auf dem Kali installiert wird
 		kali.vm.provision :shell, inline: "C:\\startup\\Kali.bat"
 	   end
    end
