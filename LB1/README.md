@@ -259,9 +259,9 @@ Wenn alles gegeben wird macht die Person irgendwas und das ist sehr schlecht. <b
 
 * [Voraussetzungen](https://www.orellfuessli.ch/shop/home/artikeldetails/ID148157789.html?ProvID=10917736&gclid=Cj0KCQjw8IaGBhCHARIsAGIRRYrHqtz0Ux3eTwbRK58BBZdGWk4mdt0Urp-j3DektYVbqLYqryWz_EAaAhaCEALw_wcB)
 
-* [Konfiguration](https://www.vagrantup.com/docs/vagrantfile/version)
-
 * [Synced Folder](https://www.vagrantup.com/docs/synced-folders/basic_usage)
+
+* [Konfiguration](https://www.vagrantup.com/docs/vagrantfile/version)
 
 * [VM Settings](https://www.vagrantup.com/docs/vagrantfile/machine_settings)
 
