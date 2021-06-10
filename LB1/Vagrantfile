@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
 	
 
     win2k8.vm.provider "libvirt" do |v|
-      v.memory = 5120
+      v.memory = 4096
       v.cpus = 2
       v.video_type = 'qxl'
       v.input :type => "tablet", :bus => "usb"
@@ -52,19 +52,19 @@ Vagrant.configure("2") do |config|
     # Insecure share from the Linux machine
     win2k8.vm.provision :shell, inline: "C:\\startup\\install_share_autorun.bat"
     win2k8.vm.provision :shell, inline: "C:\\startup\\setup_linux_share.bat"
-    win2k8.vm.provision :shell, inline: "rm C:\\startup\\*" # Cleanup startup scripts
+    win2k8.vm.provision :shell, inline: "rm C:\\startup\\*" 
   end
-  
-  Vagrant.configure("2") do |config|
+Vagrant.configure("2") do |config|
   config.vm.synced_folder '.', '/vagrant', disabled: true
   config.vm.box = "kalilinux/rolling"
+  config.vm.hostname = "kali"
   config.vm.box_version = "2021.1.0"
   
-    config.vm.define "kalilinux/rolling", primary: true do |test|
-	
-		#test.vm-box_url = "https://app.vagrantup.com/kalilinux/boxes/rolling/versions/2021.2.0"
+ 
+  config.vm.define "kalilinuxrolling", primary: true do |test|
+
+		
 		test.vm.box_check_update = true
-		test.vm.hostname = "kali"
    
 		test.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
 		virtualbox__intnet:"intnet"
@@ -72,11 +72,14 @@ Vagrant.configure("2") do |config|
 		end
   
 			config.vm.provider "virtualbox" do |v|
-			v.gui = true
+			
+			v.name = "Lb1_kali"
+			v.gui = false
 			v.memory = 5120
 			v.cpus = 4
 	
-			test.vm.provision :shell, inline: "C:\\startup\\Kali.bat"
+			#config.vm.provision :shell, path: "https://gist.github.com/TheSimomms/ce4bd83e77e067df21c9b517448c4bc4"
 			end
 	end
+
 end

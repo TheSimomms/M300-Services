@@ -112,7 +112,7 @@ Zusätzlich muss der Laptop auch die nötige Leistung aufweisen.
 
 * VT-x/AMD-V muss unterstürzt sein. 
 * 72 GB Freier Speicher
-* 7.5 GB Arbeitsspeicher
+* 10 GB Arbeitsspeicher
 
 Wenn das passt muss mit Git bash nur in das gewünschte Verzeichnis Navigiert werden und die folgenden Befehle eingegeben werden. <br>
 ```
@@ -207,7 +207,8 @@ In diesem Abschnitt ist die Kalilinux installation abgelegt <br>
 Wenn man genau Hinschaut wird noch eine Shell ausgeführt, das steht in der Shell<br>
 
 ```
-NICHT FERTIG
+NICHT FERTIGy
+
 ```
 
 Zugleich habe ich bei der Windows Version und die Ubuntu Version in das gleiche Private Netzwerk gesteckt wie Kali.
@@ -270,6 +271,8 @@ Wenn alles gegeben wird macht die Person irgendwas und das ist sehr schlecht. <b
 * [Rapid7](https://github.com/rapid7/metasploitable3/)
 
 * [Shell](https://www.vagrantup.com/docs/provisioning/shell)
+
+* [Gist](https://gist.github.com/)
 
 * [Kali](https://app.vagrantup.com/kalilinux/boxes/rolling)
 
