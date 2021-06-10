@@ -12,6 +12,8 @@
 
 * [Das Problem an diesem Resposentory](https://github.com/TheSimomms/M300-Services/tree/main/LB1#das-problem-an-diesem-resposentory)
 
+* [Quellen](https://github.com/TheSimomms/M300-Services/tree/main/LB1#quellen)
+
 ## Journal
 
 Hier wird Dokumentiert, wann ich was mache.
@@ -40,11 +42,23 @@ Kali Linux wird das Image noch nicht erkannt das werde ich am 10.06 genauer ansc
 
 ### 08.06.21
 
-Heute wurde nur das Readme wieder auf den aktuellen stand gebracht. Alle Fehlermeldungen Dokumentiert und Unterthemen bearbeitet. 
+Heute wurde nur das Readme wieder auf den aktuellen stand gebracht. <br>
+Ich habe mich mit den Themen "Was ist Metaspoitable 3", "Wieso gibt es keine Metaspoitable 3 Image", "Voraussetzungen" und "Dokumentation" auseinander gesetzt. <br>
 
 ### 10.06.21
+Ich habe heute die Technischen Fehler ausgebessert, wo ich schon zu lange dran bin. Ich musste mich durch so viele Dokumentationen schlagen,bis ich wusste was falsch ist.
+Aber es hat sich gelohnt. Jetzt kann ich bei Kali die nötigen einstellungen machen mit den Installationen und mit den Vm settings.
+
+### 11.06.21
 
 **
+
+### 12.06.21
+**
+
+### 14.06.21
+Heute ist die Abgabe von der LB1, ich habe mich vorbereitet und bin bereit für die Abgabe. 
+
 
 
 ## Was ist Metaspoitable 3
@@ -162,37 +176,35 @@ Zugleich habe ich gleich das Netzwerk Problem gelöst wo eigentlich extra noch e
 
 In diesem Abschnitt ist die Kalilinux installation abgelegt <br>
 ```
-Vagrant.configure("2") do |config|
-  config.vm.define "kali" do |kali|
-
-	 kali.vm.box = "kalilinux/rolling"
-	 #Updates wenn vorhanden soll es installiert werden
-	 kali.vm.box_check_update = true
-	 #hostname
-	 kali.vm.hostname = "kali-linux"
-   
-	#Adapter Einstellungen plus Ip und Subnetzmakse
-	 kali.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
-	 #Bei der nötigen Variante muss das Netz benannt werden. 
-	 virtualbox__intnet:"intnet"
-	 #Noch ein Adapter hinzufügen wo aber ins Internet geht für die Installatisonen
-	 kali.vm.network "public_network"
-	 end
-		#Kali Linud verwendet "VirtualBox"
-		kali.vm.provider "virtualbox" do |vb|
-		#Beim aufstarten wird kein GUI geladen mit dem Bootmenu
-		vb.gui = false
-		#Memory zuweisung.
-		vb.memory = "6144"
+  Vagrant.configure("2") do |config|
+  config.vm.synced_folder '.', '/vagrant', disabled: true
+  config.vm.box = "kalilinux/rolling"
+  config.vm.box_version = "2021.2.0"
+  
+    config.vm.define "kalilinux/rolling", primary: true do |test|
 	
-		# in diesem Bat File wird definiert, was alles auf dem Kali installiert wird
-		kali.vm.provision :shell, inline: "C:\\startup\\Kali.bat"
-	   end
-   end
-end
+		test.vm.box_check_update = true
+		test.vm.hostname = "kali"
+   
+		test.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
+		virtualbox__intnet:"intnet"
+		test.vm.network "public_network"
+		end
+  
+			config.vm.provider "virtualbox" do |v|
+			v.gui = true
+			v.memory = 5120
+			v.cpus = 4
+	
+			test.vm.provision :shell, inline: "C:\\startup\\Kali.bat"
+			end
+	end
+
 ```
 
-Wenn man genau Hinschaut wird noch eine Shell ausgeführt <br>
+
+
+Wenn man genau Hinschaut wird noch eine Shell ausgeführt, das steht in der Shell<br>
 
 ```
 NICHT FERTIG
@@ -200,12 +212,19 @@ NICHT FERTIG
 
 Zugleich habe ich bei der Windows Version und die Ubuntu Version in das gleiche Private Netzwerk gesteckt wie Kali.
 
+
 ```
 win2k8.vm.network "private_network", ip: "172.16.1.10", netmask:"255.255.255.0",
 virtualbox__intnet:"intnet"
 
 ub1404.vm.network "private_network", ip: '172.16.1.11', netmask:"255.255.255.0",
 virtualbox__intnet:"intnet"
+
+test.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
+virtualbox__intnet:"intnet"
+
+test.vm.network "public_network"
+
 ```
 
 ## Das Problem an diesem Resposentory
@@ -229,5 +248,33 @@ Doch ein Punkt stach sehr heraus. Bei Kali Linux hat einen Befehl der alle Tools
 Das soll ich machen, da wenn man ein fertige Umgebung bekommt nicht weiss was man macht.
 Wenn man jedes Tool selbst installiert weiss die Person was sie macht und setzt sich aktiv auseinander.
 Wenn alles gegeben wird macht die Person irgendwas und das ist sehr schlecht. <br>
+
+## Quellen
+
+* [Rapid7](https://github.com/rapid7/metasploitable3/)
+
+* [Was ist Metaspoitable 3](https://www.orellfuessli.ch/shop/home/artikeldetails/ID148157789.html?ProvID=10917736&gclid=Cj0KCQjw8IaGBhCHARIsAGIRRYrHqtz0Ux3eTwbRK58BBZdGWk4mdt0Urp-j3DektYVbqLYqryWz_EAaAhaCEALw_wcB)
+
+* [Wieso gibt es kein Image](https://www.orellfuessli.ch/shop/home/artikeldetails/ID148157789.html?ProvID=10917736&gclid=Cj0KCQjw8IaGBhCHARIsAGIRRYrHqtz0Ux3eTwbRK58BBZdGWk4mdt0Urp-j3DektYVbqLYqryWz_EAaAhaCEALw_wcB)
+
+* [Voraussetzungen](https://www.orellfuessli.ch/shop/home/artikeldetails/ID148157789.html?ProvID=10917736&gclid=Cj0KCQjw8IaGBhCHARIsAGIRRYrHqtz0Ux3eTwbRK58BBZdGWk4mdt0Urp-j3DektYVbqLYqryWz_EAaAhaCEALw_wcB)
+
+* [Configuration](https://www.vagrantup.com/docs/vagrantfile/version)
+
+* [VM Settings](https://www.vagrantup.com/docs/vagrantfile/machine_settings)
+
+* [VirtualBox settings](https://www.vagrantup.com/docs/providers/virtualbox/configuration)
+
+* [Network](https://www.vagrantup.com/docs/providers/virtualbox/networking)
+
+* [Synced Folder](https://www.vagrantup.com/docs/synced-folders/basic_usage)
+
+* [Shell](https://www.vagrantup.com/docs/provisioning/shell)
+
+* [Kali](https://app.vagrantup.com/kalilinux/boxes/rolling)
+
+
+
+
 
 
