@@ -39,11 +39,8 @@ Bis ich das gemerkt habe ging auch eine lange Zeit vorbei. Aber nach der Schule 
 Kali Linux wird das Image noch nicht erkannt das werde ich am 10.06 genauer anschauen.
 
 ### 08.06.21
-<<<<<<< HEAD
+
 Heute wurde nur das Readme wieder auf den aktuellen stand gebracht. Alle Fehlermeldungen Dokumentiert und Unterthemen bearbeitet. 
-=======
-Heute wurde nur das Readme wieder auf den aktuellen stand gebracht. 
->>>>>>> 5f278b54f2ec60f5ddfe9b1a8a21225df87dfbbe
 
 ### 10.06.21
 
@@ -130,7 +127,6 @@ Der Grund dafür ist dass Rapid7 keine Privatperson ist sondern ein Unternehmen 
 Zugleich habe ich lange an einem Fehler gewesen. Das Problem war, dass ich nicht pushen konnte. <br>
 Bis ich gemerkt habe, das der Antivirus ein paar Files gelöscht hat ging auch eine Zeit vorgangen.
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung3.png" width=50% height=50%> <br>
-<<<<<<< HEAD
 
 Das "end" war ein grosses Problem. Ich habe es nie gesehen das ich eins tzu viel gemacht habe.
 Ich habe immer gedacht am Code liegt irgendwo der Fehler bis ich es gemerkt habe das es einer zu viel war ging eine Zeit vorgangen. <br>
@@ -143,9 +139,6 @@ Doch ich habe immer diese Fehler lösen können. Aber bei diesem Fall hatte ich 
 
 
 
-=======
-
->>>>>>> 5f278b54f2ec60f5ddfe9b1a8a21225df87dfbbe
 Doch meine LB1 ist keine 1:1 Kopie von [Rapid7](https://github.com/rapid7/metasploitable3/). <br>
 Ich habe Kali_linux eingebaut, Kali_linux wird installiert mit Zusatz Funktionen.
 Zugleich habe ich gleich das Netzwerk Problem gelöst wo eigentlich extra noch eingebaut wäre.
@@ -165,7 +158,7 @@ Vagrant.configure("2") do |config|
 	 kali.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
 	 #Bei der nötigen Variante muss das Netz benannt werden. 
 	 virtualbox__intnet:"intnet"
-	 #Noch ein Adapter hinzufügen wo aber ins Internet geht für die Installationen
+	 #Noch ein Adapter hinzufügen wo aber ins Internet geht für die Installatisonen
 	 kali.vm.network "public_network"
 	 end
 		#Kali Linud verwendet "VirtualBox"
