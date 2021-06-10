@@ -39,11 +39,7 @@ Bis ich das gemerkt habe ging auch eine lange Zeit vorbei. Aber nach der Schule 
 Kali Linux wird das Image noch nicht erkannt das werde ich am 10.06 genauer anschauen.
 
 ### 08.06.21
-<<<<<<< HEAD
 Heute wurde nur das Readme wieder auf den aktuellen stand gebracht. Alle Fehlermeldungen Dokumentiert und Unterthemen bearbeitet. 
-=======
-Heute wurde nur das Readme wieder auf den aktuellen stand gebracht. 
->>>>>>> 5f278b54f2ec60f5ddfe9b1a8a21225df87dfbbe
 
 ### 10.06.21
 
@@ -141,11 +137,6 @@ Immer wieder kam diese Fehlermeldung. <br>
 Doch ich habe immer diese Fehler lösen können. Aber bei diesem Fall hatte ich am meisten zu kämpfen. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung4.png" width=50% height=50%> <br>
 
-
-
-=======
-
->>>>>>> 5f278b54f2ec60f5ddfe9b1a8a21225df87dfbbe
 Doch meine LB1 ist keine 1:1 Kopie von [Rapid7](https://github.com/rapid7/metasploitable3/). <br>
 Ich habe Kali_linux eingebaut, Kali_linux wird installiert mit Zusatz Funktionen.
 Zugleich habe ich gleich das Netzwerk Problem gelöst wo eigentlich extra noch eingebaut wäre.
