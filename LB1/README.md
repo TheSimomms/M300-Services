@@ -207,7 +207,13 @@ In diesem Abschnitt ist die Kalilinux installation abgelegt <br>
 Wenn man genau Hinschaut wird noch eine Shell ausgeführt, das steht in der Shell<br>
 
 ```
-NICHT FERTIGy
+Was zu machen ist:
+
+- Chrome installieren
+- Tastatur
+- User einrichten
+- zusatz software
+
 
 ```
 
@@ -267,6 +273,8 @@ Wenn alles gegeben wird macht die Person irgendwas und das ist sehr schlecht. <b
 * [VM Settings](https://www.vagrantup.com/docs/vagrantfile/machine_settings)
 
 * [Network](https://www.vagrantup.com/docs/providers/virtualbox/networking)
+
+* [Inline](https://scotch.io/courses/getting-started-with-vagrant-for-local-development/provisioning-vmprovision-how-to-customize-the-box)
 
 * [Rapid7](https://github.com/rapid7/metasploitable3/)
 
