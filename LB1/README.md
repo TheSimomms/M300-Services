@@ -144,13 +144,13 @@ Doch ich habe immer diese Fehler lösen können. Aber bei diesem Fall hatte ich 
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung4.png" width=50% height=50%> <br>
 
 Aber mit Abstand habe ich an diesem Fehler gebraucht. <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung9.png" width=50% height=50%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung9.png" width=50% height=50%> <br>
 Das ich diesen Fehler beheben konnte musste ich das vagrantfile komplett verstehen. Ich habe mich immer an dem metasploitable 3 <br>
 Vagrantfile gehalten. Bis ich gemerkt habe das an gewissen Stellen es falsch gemacht worden ist hat es diese Konstruktion bei mir nicht funktioniert.
 Doch als ich es verstanden habe das Vagrantfile habe ich gemerkt das stimmt nicht habe es anders gemacht und es funktioniert.
 Ich kann aber nicht sagen wieso es dort funktioniert. <br>
 
-Der folgende Fehler war auch nicht ohne. Bis ich gecheckt habe, dass Parameter mit der falschen Variabel defklariert waren ging auch eine Zeit vorbei.
+Der folgende Fehler war auch nicht ohne. <br> Bis ich gecheckt habe, dass Parameter mit der falschen Variabel defklariert waren ging auch eine Zeit vorbei.
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung8.png" width=50% height=50%> <br>
 
 <br>
