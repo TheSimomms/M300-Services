@@ -10,9 +10,9 @@
 | Markdown | [Link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)     |
 
 
-Bei dieser Fehlermeldung muss man folgend handeln. 
-![fehlermeldung](https://github.com/TheSimomms/M300-Services/tree/main/images/fehlermeldung.png)
-
+Bei dieser Fehlermeldung muss man folgend handeln. <br> 
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung.png" width=50% height=50%><br> 
+<br>
 Man muss in das Lokal Markdown gehen und die hidden Folder aktivieren.
 Dann sieht man den ".git" Ordner in diesem Ordner gibt es das "index.lock" file dieses muss gelöscht werden danach funktioniert es wieder.
 
