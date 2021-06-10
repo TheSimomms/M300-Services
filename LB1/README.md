@@ -132,11 +132,17 @@ Das "end" war ein grosses Problem. Ich habe es nie gesehen das ich eins tzu viel
 Ich habe immer gedacht am Code liegt irgendwo der Fehler bis ich es gemerkt habe das es einer zu viel war ging eine Zeit vorgangen. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung5.png" width=50% height=50%> <br>
 
+Auch bei git Push gibt es ein paar Fehlermeldungen wie diese Fehlermeldung <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung7.png" width=50% height=50%> <br>
+Ich habe dann aber schnell gemerkt, das der Fehler ist, das ich das Readme noch offen hatte und es das Probleme gemacht hat.
+Aber diese Fehlermeldung ist zwei mal gekommen. beim zweiten mal war der Fehler, da ich das Vagrantfile angepasst habe.
+Die Lösung war ich musste das Vagrant File ersetzen.<br>
+
+
 Immer wieder kam diese Fehlermeldung. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung4.png" width=50% height=50%> <br>
 Doch ich habe immer diese Fehler lösen können. Aber bei diesem Fall hatte ich am meisten zu kämpfen. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung4.png" width=50% height=50%> <br>
-
 
 
 Doch meine LB1 ist keine 1:1 Kopie von [Rapid7](https://github.com/rapid7/metasploitable3/). <br>
