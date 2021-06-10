@@ -6,6 +6,8 @@
 
 * [Wieso gibt es keine Metaspoitable 3 Image](https://github.com/TheSimomms/M300-Services/tree/main/LB1#wieso-gibt-es-keine-metaspoitable-3-image)
 
+* [Voraussetzungen](https://github.com/TheSimomms/M300-Services/blob/main/LB1/README.md#voraussetzungen)
+
 * [Dokumentation](https://github.com/TheSimomms/M300-Services/tree/main/LB1#dokumentation)
 
 * [Das Problem an diesem Resposentory](https://github.com/TheSimomms/M300-Services/tree/main/LB1#das-problem-an-diesem-resposentory)
@@ -72,7 +74,9 @@ Deswegen wird auch eine Windows eine Testversion installiert. Es wird mit vagran
 
 ## Voraussetzungen
 
-Damit Metaspoitable 3 funktioniert muss einiges vorhher eingerichtet werden.
+Damit Metaspoitable 3 funktioniert muss einiges vorhher eingerichtet werden und die Hardware muss auch passend sein. <br>
+
+Als erstes müssen diese Softwares alle installiert sein.
 
 * Virtualbox
 Wir brauchen ein Virtualiserungssystem. 
@@ -89,13 +93,20 @@ Download:
 * [Vagrant](https://www.vagrantup.com/docs/installation/)
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
-Windows users:
+Zusätzlich muss der Laptop auch die nötige Leistung aufweisen.
+
+* VT-x/AMD-V muss unterstürzt sein. 
+* 72 GB Freier Speicher
+* 7.5 GB Arbeitsspeicher
+
+Wenn das passt muss mit Git bash nur in das gewünschte Verzeichnis Navigiert werden und die folgenden Befehle eingegeben werden. <br>
 ```
 mkdir metasploitable3
 cd metasploitable3
 git clone https://github.com/TheSimomms/M300-Services/tree/main/LB1
 vagrant up
 ```
+
 
 ## Dokumentation
 
