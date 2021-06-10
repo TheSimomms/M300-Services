@@ -54,23 +54,29 @@ Vagrant.configure("2") do |config|
     win2k8.vm.provision :shell, inline: "C:\\startup\\setup_linux_share.bat"
     win2k8.vm.provision :shell, inline: "rm C:\\startup\\*" # Cleanup startup scripts
   end
+  
   Vagrant.configure("2") do |config|
-  config.vm.define "kali" do |kali|
-
-		kali.vm.box = "kalilinux/rolling"
-		kali.vm.box_check_update = true
-		kali.vm.hostname = "kali-linux"
+  config.vm.synced_folder '.', '/vagrant', disabled: true
+  config.vm.box = "kalilinux/rolling"
+  config.vm.box_version = "2021.1.0"
+  
+    config.vm.define "kalilinux/rolling", primary: true do |test|
+	
+		#test.vm-box_url = "https://app.vagrantup.com/kalilinux/boxes/rolling/versions/2021.2.0"
+		test.vm.box_check_update = true
+		test.vm.hostname = "kali"
    
-		kali.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
+		test.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
 		virtualbox__intnet:"intnet"
-		kali.vm.network "public_network"
+		test.vm.network "public_network"
 		end
   
-			kali.vm.provider "virtualbox" do |vb|
-			vb.gui = false
-			vb.memory = "6144"
+			config.vm.provider "virtualbox" do |v|
+			v.gui = true
+			v.memory = 5120
+			v.cpus = 4
 	
-			kali.vm.provision :shell, inline: "C:\\startup\\Kali.bat"
+			test.vm.provision :shell, inline: "C:\\startup\\Kali.bat"
 			end
 	end
 end

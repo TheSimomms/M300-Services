@@ -138,12 +138,23 @@ Ich habe dann aber schnell gemerkt, das der Fehler ist, das ich das Readme noch 
 Aber diese Fehlermeldung ist zwei mal gekommen. beim zweiten mal war der Fehler, da ich das Vagrantfile angepasst habe.
 Die Lösung war ich musste das Vagrant File ersetzen.<br>
 
-
 Immer wieder kam diese Fehlermeldung. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung4.png" width=50% height=50%> <br>
 Doch ich habe immer diese Fehler lösen können. Aber bei diesem Fall hatte ich am meisten zu kämpfen. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung4.png" width=50% height=50%> <br>
 
+Aber mit Abstand habe ich an diesem Fehler gebraucht. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung9.png" width=50% height=50%> <br>
+Das ich diesen Fehler beheben konnte musste ich das vagrantfile komplett verstehen. Ich habe mich immer an dem metasploitable 3 <br>
+Vagrantfile gehalten. Bis ich gemerkt habe das an gewissen Stellen es falsch gemacht worden ist hat es diese Konstruktion bei mir nicht funktioniert.
+Doch als ich es verstanden habe das Vagrantfile habe ich gemerkt das stimmt nicht habe es anders gemacht und es funktioniert.
+Ich kann aber nicht sagen wieso es dort funktioniert. <br>
+
+Der folgende Fehler war auch nicht ohne. Bis ich gecheckt habe, dass Parameter mit der falschen Variabel defklariert waren ging auch eine Zeit vorbei.
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung8.png" width=50% height=50%> <br>
+
+<br>
+<br>
 
 Doch meine LB1 ist keine 1:1 Kopie von [Rapid7](https://github.com/rapid7/metasploitable3/). <br>
 Ich habe Kali_linux eingebaut, Kali_linux wird installiert mit Zusatz Funktionen.
