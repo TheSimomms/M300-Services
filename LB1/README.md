@@ -20,7 +20,7 @@ Heute haben wir das erste mal Vagrant angeschaut in in der Schule und haben ange
 Ich habe das schon gekannt von Metaspoitable deswegen hatte ich kleine Probleme. 
 ### 17.05.21
 
-Wir haben heute das Markdown angeschaut. Es ist HTML. Wenn ein Bild zu gross ist muss man <img src= "" > <br>
+Wir haben heute das Markdown angeschaut. Es ist HTML. Wenn ein Bild zu gross ist, muss man <*img src= "" *> (einfach ohne Sterne) <br>
 hineinfügen und dann mit der Gröse und Breite kann man dann herumbasteln.
 Wenn man "enter" verwenden will wird es nicht 1:1 so gemacht. Damit das funktioniert muss man das Kleiner als Zeichen "<" und dann br und dann das grösser als Zeichen hinzufügen. 
 Mit allem war ich in 2 Stunden fertig. Ich habe in der restlichten Zeit Sebastian unterstürzt, da er schwirigkeiten hat. 
