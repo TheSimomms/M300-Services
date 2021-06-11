@@ -209,8 +209,21 @@ Wenn man genau Hinschaut wird noch eine Shell ausgeführt, das steht in der Shel
 ```
 Was zu machen ist:
 
-- Chrome installieren
-- Tastatur
+sudo su
+
+#Das schweizer Layout wird definiert
+setxkbmap -layout ch de
+#Software wird installiert
+apt install wget
+#Navgation zum Desktop
+cd Desktop
+#Ordner "well" erstellen.
+mkdir well
+# Ordner Navigieren
+cd well
+#Webseite herunterladen
+wget -p -m -k -K -E https://de.wikipedia.org/wiki/Liste_der_standardisierten_Ports -e robots=off
+
 - User einrichten
 - zusatz software
 
