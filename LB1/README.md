@@ -168,8 +168,6 @@ Der folgende Fehler war auch nicht ohne. <br> Bis ich gecheckt habe, dass Parame
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung8.png" width=50% height=50%> <br>
 
 <br>
-<br>
-
 Doch meine LB1 ist keine 1:1 Kopie von [Rapid7](https://github.com/rapid7/metasploitable3/). <br>
 Ich habe Kali_linux eingebaut, Kali_linux wird installiert mit Zusatz Funktionen.
 Zugleich habe ich gleich das Netzwerk Problem gelöst wo eigentlich extra noch eingebaut wäre.
@@ -207,20 +205,23 @@ In diesem Abschnitt ist die Kalilinux installation abgelegt <br>
 Wenn man genau Hinschaut wird noch eine Shell ausgeführt, das steht in der Shell<br>
 
 ```
-Was zu machen ist:
-
 sudo su
 
 #Das schweizer Layout wird definiert
 setxkbmap -layout ch de
+
 #Software wird installiert
 apt install wget
+
 #Navgation zum Desktop
 cd Desktop
+
 #Ordner "well" erstellen.
 mkdir well
+
 # Ordner Navigieren
 cd well
+
 #Webseite herunterladen
 wget -p -m -k -K -E https://de.wikipedia.org/wiki/Liste_der_standardisierten_Ports -e robots=off
 
@@ -287,9 +288,9 @@ Wenn alles gegeben wird macht die Person irgendwas und das ist sehr schlecht. <b
 
 * [Network](https://www.vagrantup.com/docs/providers/virtualbox/networking)
 
-* [Inline](https://scotch.io/courses/getting-started-with-vagrant-for-local-development/provisioning-vmprovision-how-to-customize-the-box)
-
 * [Rapid7](https://github.com/rapid7/metasploitable3/)
+
+* [Inline](https://scotch.io/courses/getting-started-with-vagrant-for-local-development/provisioning-vmprovision-how-to-customize-the-box)
 
 * [Shell](https://www.vagrantup.com/docs/provisioning/shell)
 
