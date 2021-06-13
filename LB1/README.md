@@ -176,7 +176,7 @@ Doch als ich es verstanden habe das Vagrantfile habe ich gemerkt das stimmt nich
 Ich kann aber nicht sagen wieso es dort funktioniert. <br>
 
 Das gleiche Problem wie immer, ich habe was ausprobiert und es hat nicht funktioniert. <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung11.png" width=50% height=50%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung11.png" width=120% height=120%> <br>
 Ich musste mich mit den Dokumentationen auseinander setzten das ich den Fehler bemerkt habe. 
 <br>
 
