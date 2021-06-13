@@ -181,9 +181,6 @@ Mit dem hat es gleich funktioniert.<br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung11.png" width=200% height=200%> <br>
 
 <br>
-
-
-<br>
 Doch meine LB1 ist keine 1:1 Kopie von [Rapid7](https://github.com/rapid7/metasploitable3/). <br>
 Ich habe Kali_linux eingebaut, Kali_linux wird installiert mit Zusatz Funktionen.
 Zugleich habe ich gleich das Netzwerk Problem gelöst wo eigentlich extra noch eingebaut wäre.
