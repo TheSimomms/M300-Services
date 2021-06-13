@@ -47,17 +47,21 @@ Ich habe mich mit den Themen "Was ist Metaspoitable 3", "Wieso gibt es keine Met
 
 ### 10.06.21
 Ich habe heute die Technischen Fehler ausgebessert, wo ich schon zu lange dran bin. Ich musste mich durch so viele Dokumentationen schlagen,bis ich wusste was falsch ist.
-Aber es hat sich gelohnt. Jetzt kann ich bei Kali die nötigen einstellungen machen mit den Installationen und mit den Vm settings.
+Aber es hat sich gelohnt. Jetzt kann ich bei Kali die nötigen einstellungen machen mit den Installationen und mit den Vm settings.<br>
 
 ### 11.06.21
 
-**
+Ich arbeitete so lange das es schon Freitag wurde. Ich habe mich in die Einstellungen verbissen das ich nicht mehr die Zeit im Blick hatte.<br>
 
 ### 12.06.21
-**
+Kleine anpassungen am Vagrant Skript gemacht.<br>
+
+### 13.06.21
+
+Der letzte Schliff vom Skript wurde gemacht. Zusätzlich wurde noch das Readme up to date gebracht. 
 
 ### 14.06.21
-Heute ist die Abgabe von der LB1, ich habe mich vorbereitet und bin bereit für die Abgabe. 
+Heute ist die Abgabe von der LB1, ich habe mich vorbereitet und bin bereit für die Abgabe. <br>
 
 
 
@@ -142,9 +146,19 @@ Zugleich habe ich lange an einem Fehler gewesen. Das Problem war, dass ich nicht
 Bis ich gemerkt habe, das der Antivirus ein paar Files gelöscht hat ging auch eine Zeit vorgangen.
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung3.png" width=50% height=50%> <br>
 
+Immer wieder kam diese Fehlermeldung. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung4.png" width=50% height=50%> <br>
+Doch ich habe immer diese Fehler lösen können. Aber bei diesem Fall hatte ich am meisten zu kämpfen. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung4.png" width=50% height=50%> <br>
+
 Das "end" war ein grosses Problem. Ich habe es nie gesehen das ich eins tzu viel gemacht habe.
 Ich habe immer gedacht am Code liegt irgendwo der Fehler bis ich es gemerkt habe das es einer zu viel war ging eine Zeit vorgangen. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung5.png" width=50% height=50%> <br>
+
+Das Problem hier ist das es "test" nicht annehmen will. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung6.png" width=50% height=50%> <br>
+Das Problem war, da ich was gemacht habe wo ich nicht wusste was zu tun ist. 
+Erst als ich mich genau mit dem Vagrantfile auseinander gesetzt habe hat es funktioniert. <br>
 
 Auch bei git Push gibt es ein paar Fehlermeldungen wie diese Fehlermeldung <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung7.png" width=50% height=50%> <br>
@@ -152,10 +166,8 @@ Ich habe dann aber schnell gemerkt, das der Fehler ist, das ich das Readme noch 
 Aber diese Fehlermeldung ist zwei mal gekommen. beim zweiten mal war der Fehler, da ich das Vagrantfile angepasst habe.
 Die Lösung war ich musste das Vagrant File ersetzen.<br>
 
-Immer wieder kam diese Fehlermeldung. <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung4.png" width=50% height=50%> <br>
-Doch ich habe immer diese Fehler lösen können. Aber bei diesem Fall hatte ich am meisten zu kämpfen. <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung4.png" width=50% height=50%> <br>
+Der folgende Fehler war auch nicht ohne. <br> Bis ich gecheckt habe, dass Parameter mit der falschen Variabel defklariert waren ging auch eine Zeit vorbei.
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung8.png" width=50% height=50%> <br>
 
 Aber mit Abstand habe ich an diesem Fehler gebraucht. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung9.png" width=100% height=100%> <br>
@@ -164,8 +176,12 @@ Vagrantfile gehalten. Bis ich gemerkt habe das an gewissen Stellen es falsch gem
 Doch als ich es verstanden habe das Vagrantfile habe ich gemerkt das stimmt nicht habe es anders gemacht und es funktioniert.
 Ich kann aber nicht sagen wieso es dort funktioniert. <br>
 
-Der folgende Fehler war auch nicht ohne. <br> Bis ich gecheckt habe, dass Parameter mit der falschen Variabel defklariert waren ging auch eine Zeit vorbei.
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung8.png" width=50% height=50%> <br>
+Das gleiche Problem wie immer, ich habe was ausprobiert und es hat nicht funktioniert. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/Fehlermeldung11.png" width=50% height=50%> <br>
+Ich musste mich mit den Dokumentationen auseinander setzten das ich den Fehler bemerkt habe. 
+<br>
+
+
 
 <br>
 Doch meine LB1 ist keine 1:1 Kopie von [Rapid7](https://github.com/rapid7/metasploitable3/). <br>
@@ -174,62 +190,43 @@ Zugleich habe ich gleich das Netzwerk Problem gelöst wo eigentlich extra noch e
 
 In diesem Abschnitt ist die Kalilinux installation abgelegt <br>
 ```
-  Vagrant.configure("2") do |config|
-  config.vm.synced_folder '.', '/vagrant', disabled: true
+ 
+
   config.vm.box = "kalilinux/rolling"
+  config.vm.hostname = "kali"
   config.vm.box_version = "2021.2.0"
   
-    config.vm.define "kalilinux/rolling", primary: true do |test|
-	
-		test.vm.box_check_update = true
-		test.vm.hostname = "kali"
+   config.vm.define "kalilinuxrolling", primary: true do |test|
+		
+	test.vm.box_check_update = true
    
-		test.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
-		virtualbox__intnet:"intnet"
-		test.vm.network "public_network"
+	test.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
+	virtualbox__intnet:"intnet"
+	test.vm.network "public_network"
 		end
   
-			config.vm.provider "virtualbox" do |v|
-			v.gui = true
-			v.memory = 5120
-			v.cpus = 4
-	
-			test.vm.provision :shell, inline: "C:\\startup\\Kali.bat"
+	config.vm.provider "virtualbox" do |v|
+			
+		v.name = "Lb1_kali"
+		v.gui = false
+		v.memory = 5120
+		v.cpus = 4
+		config.vm.provision "shell", inline: <<-SHELL
+			
+sudo su
+apt update
+setxkbmap -layout ch de
+setxkbmap -layout ch de
+apt upgrade
+
+SHELL
+
 			end
 	end
 
-```
-
-
-
-Wenn man genau Hinschaut wird noch eine Shell ausgeführt, das steht in der Shell<br>
 
 ```
-sudo su
 
-#Das schweizer Layout wird definiert
-setxkbmap -layout ch de
-
-#Software wird installiert
-apt install wget
-
-#Navgation zum Desktop
-cd Desktop
-
-#Ordner "well" erstellen.
-mkdir well
-
-# Ordner Navigieren
-cd well
-
-#Webseite herunterladen
-wget -p -m -k -K -E https://de.wikipedia.org/wiki/Liste_der_standardisierten_Ports -e robots=off
-
-- User einrichten
-- zusatz software
-
-
-```
 
 Zugleich habe ich bei der Windows Version und die Ubuntu Version in das gleiche Private Netzwerk gesteckt wie Kali.
 
