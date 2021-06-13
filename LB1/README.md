@@ -176,8 +176,10 @@ Doch als ich es verstanden habe das Vagrantfile habe ich gemerkt das stimmt nich
 Ich kann aber nicht sagen wieso es dort funktioniert. <br>
 
 Das gleiche Problem wie immer, ich habe was ausprobiert und es hat nicht funktioniert. <br>
+Ich musste mich mit den Dokumentationen auseinander setzten das ich den Fehler bemerkt habe. Es war das "<<-SHELL" wo gefehlt hat.
+Mit dem hat es gleich funktioniert.<br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB1/images/fehlermeldung11.png" width=200% height=200%> <br>
-Ich musste mich mit den Dokumentationen auseinander setzten das ich den Fehler bemerkt habe. 
+
 <br>
 
 
@@ -188,20 +190,18 @@ Zugleich habe ich gleich das Netzwerk Problem gelöst wo eigentlich extra noch e
 
 In diesem Abschnitt ist die Kalilinux installation abgelegt <br>
 ```
- 
+ config.vm.box = "kalilinux/rolling"
+ config.vm.hostname = "kali"
+ config.vm.box_version = "2021.2.0"
 
-  config.vm.box = "kalilinux/rolling"
-  config.vm.hostname = "kali"
-  config.vm.box_version = "2021.2.0"
-  
-   config.vm.define "kalilinuxrolling", primary: true do |test|
+ config.vm.define "kalilinuxrolling", primary: true do |test|
 		
 	test.vm.box_check_update = true
    
 	test.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
 	virtualbox__intnet:"intnet"
 	test.vm.network "public_network"
-		end
+	end
   
 	config.vm.provider "virtualbox" do |v|
 			
@@ -221,8 +221,6 @@ SHELL
 
 		end
 	end
-
-
 ```
 
 
