@@ -55,12 +55,11 @@ Vagrant.configure("2") do |config|
   end
   
   config.vm.define "Kali" do |test|
-  config.vm.box = "kalilinux/rolling"
-  config.vm.hostname = "kali"
-  config.vm.box_version = "2021.2.0"
+  test.vm.box = "kalilinux/rolling"
+  test.vm.hostname = "kali"
   
-   config.vm.define "kalilinuxrolling", primary: true do |test|
-		
+  test.vm.box_version = "2021.2.0"
+  
 	test.vm.box_check_update = true
    
 	test.vm.network "private_network", ip: "172.16.1.20", netmask:"255.255.255.0",
@@ -70,20 +69,13 @@ Vagrant.configure("2") do |config|
   
 	config.vm.provider "virtualbox" do |v|
 			
-		v.name = "Lb1_kali"
 		v.gui = false
 		v.memory = 5120
 		v.cpus = 4
 		config.vm.provision "shell", inline: <<-SHELL
 			
-sudo su
-apt update
-setxkbmap -layout ch de
-setxkbmap -layout ch de
-apt upgrade
 
 SHELL
 
 			end
 	end
-end
