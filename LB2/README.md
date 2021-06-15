@@ -39,7 +39,7 @@ Docker ist eine Softwareplattform die ermöglicht Anwendungen schnell zu erstell
 Docker verpackt Software in eine klare Einheit, die als "Container" bezeichnet werden und alles enthaltet. <br>
 Einschliesslich Bibliotheken, Systemtools, Code und Laufzeit.
 
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/quelle1.png" width=100% height=100%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/quelle1.jpg" width=100% height=100%> <br>
 
 ## Dokumentation
 
