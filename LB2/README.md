@@ -93,7 +93,8 @@ Dann muss man den User hinzufügen und auf "Übernehmen" klicken. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_4.png" width=35% height=35%> <br>
 Der User wurde berechtigt, dann wird der Desktop gestartet. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_1.png" width=50% height=50%> <br>
-Dann bei den laufenden Services kommt dieses Symbol und auf dieses Symbol muss ein rechtsklick gemacht weren und Settings ausgewählt.
+Dann bei den laufenden Services kommt dieses Symbol. <br>
+Auf diesem Symbol muss ein Rechtsklick gemacht werden und Settings ausgewählt werden.
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_5.png" width=30% height=30%> <br>
 
 Wie man den Desktop genau einrichtet wird [hier](https://docs.docker.com/docker-for-windows/#docker-settings-dialog) beschrieben. 
