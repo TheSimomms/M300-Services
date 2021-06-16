@@ -81,9 +81,23 @@ Es werden die Versionen Windows 10 64-bit: Home, Pro, Enterprise, oder Education
 Wenn es heruntergeladen ist muss man die Datei ausführen und WSL 2 mit installieren. WLS ist eine feature das auf Windows aktiviert wird. <br>
 Wenn man mehr über WLS wissen möchte ist die Dokumentation [Hier](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
-
 Wer mit Visual Code Docker programmiert, kann sich dazu die passenden Plugins installieren.<br>
 Das Plugin findet man [hier](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)<br>
+
+Docker ist nach der installation nicht bereit. 
+Wenn man wie ich keine Lokale Adminrechte hat, dann muss der user in die Gruppe "user-docker" hinzugefügt werden.
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_2.png" width=50% height=50%> <br>
+Wenn die Adminrechte eingegeben wurden, muss man die Gruppe "user-docker" suchen.
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_3.png" width=50% height=50%> <br>
+Der letzte Schritt ist es den User hinzuzufügen und zu speichern. 
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_4.png" width=50% height=50%> <br>
+
+Der User wurde berechtigt, dann wird der Desktop gestartet. 
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_1.png" width=50% height=50%> <br>
+Dann bei den laufenden Services kommt dieses Symbol und auf dieses Symbol muss ein rechtsklick gemacht weren und Settings ausgewählt
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_5.png" width=50% height=50%> <br>
+
+Wie man den Desktop genau einrichtet wird [hier](https://docs.docker.com/docker-for-windows/#docker-settings-dialog) beschrieben. 
 
 
 ## Dokumentation
