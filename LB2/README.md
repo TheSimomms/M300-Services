@@ -4,11 +4,11 @@
 
 * [Journal](https://github.com/TheSimomms/M300-Services/tree/main/LB2#Journal)
 
-* [Was ist Docker](https://github.com/TheSimomms/M300-Services/tree/main/LB2#was-ist-Docker/)
+* [Was ist Docker](https://github.com/TheSimomms/M300-Services/tree/main/LB2#was-ist-docker)
 
-* [Was ist Kubernetes](https://github.com/TheSimomms/M300-Services/tree/main/LB2#was-ist-kubernetes/)
+* [Was ist Kubernetes](https://github.com/TheSimomms/M300-Services/tree/main/LB2#was-ist-kubernetes)
 
-* [Docker Installation](#)
+* [Docker Installation](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-installation)
 
 * [Dokumentation](https://github.com/TheSimomms/M300-Services/tree/main/LB2#dokumentation)
 
@@ -28,10 +28,10 @@ Aber wo ich niemanden geholfen habe, habe ich [Kap 30](https://github.com/mc-b/M
 und [Kap 35](https://github.com/mc-b/M300/tree/master/35-Sicherheit) gelesen.
 
 ### 15.06.2021
-Heute habe ich [Was ist Docker](https://github.com/TheSimomms/M300-Services/tree/main/LB2#was-ist-Docker/) Dokumentiert.
+Heute habe ich [Was ist Docker](https://github.com/TheSimomms/M300-Services/tree/main/LB2#was-ist-docker) Dokumentiert.
 
 ### 16.06.2021
-Der Abschnitt [Was ist Kubernetes](https://github.com/TheSimomms/M300-Services/tree/main/LB2#was-ist-kubernetes/) wurde dokumentiert
+Der Abschnitt [Was ist Kubernetes](https://github.com/TheSimomms/M300-Services/tree/main/LB2#was-ist-kubernetes) wurde dokumentiert
 Aber heute wurde auch noch Docker installiert, wie die Installation funktioniert habe ich im Abschnitt Docker installation beschrieben.
 
 ### 17.06.2021
