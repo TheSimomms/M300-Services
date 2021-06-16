@@ -85,14 +85,14 @@ Wer mit Visual Code Docker programmiert, kann sich dazu die passenden Plugins in
 Das Plugin findet man [hier](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)<br>
 
 Docker ist nach der installation nicht bereit. 
-Wenn man wie ich keine Lokale Adminrechte hat, dann muss der user in die Gruppe "user-docker" hinzugefügt werden.
+Wenn man wie ich keine Lokale Adminrechte hat, dann muss der user in die Gruppe "user-docker" hinzugefügt werden. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_2.png" width=50% height=50%> <br>
 Wenn die Adminrechte eingegeben wurden, muss man die Gruppe "user-docker" suchen.
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_3.png" width=50% height=50%> <br>
-Der letzte Schritt ist es den User hinzuzufügen und zu speichern. 
+Der letzte Schritt ist es den User hinzuzufügen und zu speichern. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_4.png" width=50% height=50%> <br>
 
-Der User wurde berechtigt, dann wird der Desktop gestartet. 
+Der User wurde berechtigt, dann wird der Desktop gestartet. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_1.png" width=50% height=50%> <br>
 Dann bei den laufenden Services kommt dieses Symbol und auf dieses Symbol muss ein rechtsklick gemacht weren und Settings ausgewählt
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/docker_5.png" width=50% height=50%> <br>
