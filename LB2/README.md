@@ -34,20 +34,45 @@ Heute habe ich [Was ist Docker](https://github.com/TheSimomms/M300-Services/tree
 Der Abschnitt [Was ist Kubernetes](https://github.com/TheSimomms/M300-Services/tree/main/LB2#was-ist-kubernetes) wurde dokumentiert
 Aber heute wurde auch noch Docker installiert, wie die Installation funktioniert habe ich im Abschnitt Docker installation beschrieben.
 
-### 17.06.2021
-
-* Platzhalter
-
 ### 21.06.2021
 
-* Platzhalter
+Heute haben wir genauer Docker angeschaut und die Grundlegenden Befehle angeschaut.
+
+### 23.06.2021
+Ich setze mich heute stark mit Docker auseinander um zu verstehen wie das ganze funktioniert.
+
+### 24.06.2021
+Ich verstehe es inzwischen besser aber ist doch nicht so einfach wie ich es gedacht habe. <br>
+Vorallem ist es Docker Desktop das irgendwie klar aufgebaut ist aber wenn man keine ahnung hat ist e sehr verwirrend.
 
 ### 28.06.2021
+
+In der letzte Woche wurde nicht wirklich an diesem Projekt gemacht, ausser das mit Docker. <br>
+Ich habe es vergessen zu pushen. Ich habe fast nichts gemacht, da wir die Probe VA fertig machen mussten. <br>
+Heute Morgen hatten wir eine kleine Einleitung zu Kubernetis.  
+
+### 29.06.2021
+
+* Platzhalter
+
+### 30.06.2021
+
+* Platzhalter
+
+### 01.07.2021
+
+* Platzhalter
+
+### 02.07.2021
+
+* Platzhalter
+
+### 03.07.2021
 
 * Platzhalter
 
 ### 05.07.2021
-* Platzhalter
+Heute ist die Abgabe
 
 ### 12.07.2021
 An diesem Datum ist der Sporttag und mein Geburtstag :D
@@ -102,6 +127,20 @@ Wie man den Desktop genau einrichtet wird [hier](https://docs.docker.com/docker-
 
 ## Dokumentation
 
+Ich muss sagen bis man das versteht braucht man etwas länger als erwartet. <br>
+In der Schule sah alles so einfach aus aber ist es nicht. Es ist vorallem am Anfang sehr verwirrend.<br>
+Nur bis man da alles versteht braucht es eine grossen Aufwand. 
+<br>
+
+Mein Projekt geht darüber, das ich eine Umgebung aufbaue mit Ticketsystem wo die einzelne User eingerichtet sind. <br>
+Zusätzlich wird ein E-Mail Dienst eingerichtet und es wird gemonitort.
+
+Zuerst wurde das Ticketing System eingerichtet. Ich bin in das File docker-compose.yml gegangen und habe Users hinzugefügt. <br>
+
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/doc_1.png" width=50% height=50%> <br>
+
+Nicht nur wurde ein User hinzugefügt, sondern ich habe mich mit der Dockumentation von Mariadb stark auseinander gesetzt und habe entschieden, das ich noch die Sprache anpasse. 
+
 ## Quellen
 
 * [Was ist Kubernets - Logo](https://www.freelogovectors.net/kubernetes-logo/)
@@ -113,3 +152,7 @@ Wie man den Desktop genau einrichtet wird [hier](https://docs.docker.com/docker-
 * [Was ist Kubernets](https://kubernetes.io/de/docs/concepts/overview/what-is-kubernetes/)
 
 * [Was ist Docker](https://www.ionos.de/digitalguide/server/knowhow/was-ist-docker/)
+
+* [Docker docs](https://docs.docker.com/)
+
+* [Networking](https://docs.docker.com/config/containers/container-networking/)
