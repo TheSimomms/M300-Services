@@ -129,6 +129,7 @@ Hier kann nach freier Wahl eine Version ausgesucht werden., Ich würde aber nich
 
 Wenn alles installiert ist muss die Ubuntu Version gestartet werden.
 und es muss ein Benutzername und ein Password definiert werden. <br>
+<br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/k_4.png" width=100% height=100%> <br>
 
 Als letztes muss geprüft werden, ob alles auf der Version "2" ist. <br>
