@@ -143,7 +143,7 @@ Danach muss es deklariert werden, das es unterschieden werden kann. <br>
 
 Danach wird auf das Verzeichnis mit dem dockerfile navigiert. <br>
 <br>
-<strong>Es darf nicht der Tagname TEST verwendet werden. Es wird nicht gepusht am ende sondern ist nur lokal auf dem Desktop! </strong> <br>
+<strong>Es darf nicht der Tagname TEST verwendet werden. Es wird nicht gepusht auf github, sondern ist nur lokal auf dem Desktop vorhanden! </strong> <br>
 <br>
 Der tag ist gespeichert. Das heisst wenn es gepusht wird, muss dieser tag verwendet werden. <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_3.png" width=110% height=110%> <br>
