@@ -8,7 +8,7 @@
 
 * [Was ist Kubernetes](https://github.com/TheSimomms/M300-Services/tree/main/LB2#was-ist-kubernetes)
 
-* [Docker Installation](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-installation)
+* [Docker Installation](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-desktop-installation)
 
 * [Dokumentation](https://github.com/TheSimomms/M300-Services/tree/main/LB2#dokumentation)
 
@@ -34,13 +34,6 @@ Heute habe ich [Was ist Docker](https://github.com/TheSimomms/M300-Services/tree
 Der Abschnitt [Was ist Kubernetes](https://github.com/TheSimomms/M300-Services/tree/main/LB2#was-ist-kubernetes) wurde dokumentiert
 Aber heute wurde auch noch Docker installiert, wie die Installation funktioniert habe ich im Abschnitt Docker installation beschrieben.
 
-### 21.06.2021
-
-Heute haben wir genauer Docker angeschaut und die Grundlegenden Befehle angeschaut.
-
-### 23.06.2021
-Ich setze mich heute stark mit Docker auseinander um zu verstehen wie das ganze funktioniert.
-
 ### 24.06.2021
 Ich verstehe es inzwischen besser aber ist doch nicht so einfach wie ich es gedacht habe. <br>
 Vorallem ist es Docker Desktop das irgendwie klar aufgebaut ist aber wenn man keine ahnung hat ist e sehr verwirrend.
@@ -48,12 +41,13 @@ Vorallem ist es Docker Desktop das irgendwie klar aufgebaut ist aber wenn man ke
 ### 28.06.2021
 
 In der letzte Woche wurde nicht wirklich an diesem Projekt gemacht, ausser das mit Docker. <br>
-Ich habe es vergessen zu pushen. Ich habe fast nichts gemacht, da wir die Probe VA fertig machen mussten. <br>
-Heute Morgen hatten wir eine kleine Einleitung zu Kubernetis.  
+Ich habe mich genauer mit dem Desktop auseinander gesetzt es war sehr verwirrend. 
 
 ### 29.06.2021
 
-* Platzhalter
+Habe mich heute stark mit Docker den Befehlen und mit dem Desktop auseinander gesetzt.<br>
+
+Je länger ich daran gesessen bin desto mehr fragen hatte ich. Aber mit der Zeit kam ich immer mehr draus. --> [good to know](https://github.com/TheSimomms/M300-Services/tree/main/LB2#good-to-know)
 
 ### 30.06.2021
 
@@ -99,7 +93,7 @@ Diese Cluster können Hosts in öffentlichen, privaten oder hybriden Clouds habe
 
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/kubernetes_logo.png" width=50% height=50%> <br>
 
-## Docker installation
+## Docker Desktop installation
 
 Der erste Schritt ist, das [Docker](https://www.docker.com/products/docker-desktop) heruntergeladen wird. <br>
 Es werden die Versionen Windows 10 64-bit: Home, Pro, Enterprise, oder Education unterstützt die 1909 oder älter sind.
@@ -124,6 +118,59 @@ Auf diesem Symbol muss ein Rechtsklick gemacht werden und Settings ausgewählt w
 
 Wie man den Desktop genau einrichtet wird [hier](https://docs.docker.com/docker-for-windows/#docker-settings-dialog) beschrieben. 
 
+## good to know
+Die ganze Docker Desktop geschichte ist schwiriger als erwartet. Wichtige Befehle die Verwendet werden. <br>
+Bevor das genau angeschaut wird muss zuerst der Docker Desktop installiert werden. [Docker Desktop](#)
+
+| Befehl                                | Anwendung                                                    | Beispiel                    |
+| ------------------------------------- | ------------------------------------------------------------ | --------------------------- |
+| docker build                          | Generiert aus einem Dockerfile ein Image. "-t" ist für das benennen des Image. Der "." steht dafür das das Dockerfile im aktuellen Verzeichnis liegt. | docker build -t sali .      |
+| docker run                            | Startet aus einem Image ein Container.                       | docker run -p 80:80 sali    |
+| docker ps                             | Zeigt alle Container, aktiv wie auch beendete.               | docker ps -all              |
+| docker stop                           | Beendet aktiven Container.                                   | docker stop 40b34           |
+| docker rm                             | Löscht beendeten Container.                                  | docker rm  40b34            |
+| docker pull                           | Lädt beliebiges Image herunter.                              | docker pull ubuntu:14.04    |
+| docker rmi                            | Löscht bestimmtes Image.                                     | docker rmi sste            |
+| docker exec -i -t container_name bash | Shell in einem Container öffnen.                             | docker exec -i -t x345 bash |
+<br>
+
+Git bash ist nicht dafür geeignet, das man docker darüber laufen lässt. Generell Windows nicht.
+Es gibt eine bessere Variante als gitbash. Dafür muss man den Windows Store öffnen und die Applikation "Windows Terminal" installieren.
+Windows Terminal ist powershell nur in besser. Es standardmässig Azure Cloud Powershell etc installiert. Eigentlich ist es nichts anderes als Powershell plus eine Remote shell. Man kann sich damit auf den respi, Vms etc verbinden. Zusätzlich ist eine WSL2 standardmässig mitgegeben. Das ist wichtig, da WSL zwingend für Docker gebraucht wird.  <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_1.png" width=50% height=50%> <br>
+
+Wenn es eingerichtet worden ist, muss ein Verzeichnis ausgewählt werden, wo die daten abgelegt werden. <br>
+Zuerst muss man in die Einstellungen gehen und die JSON-Datei öffnen. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_2.png" width=50% height=50%> <br>
+
+Danach muss in diesem Bereich eingefügt werden und gespeichert werden. Das war alles <br>
+
+
+```
+
+     
+     {
+
+                "closeOnExit": "never",
+                "commandline": "wsl ~",
+                "cursorColor": "#FFFFFF",
+                "cursorShape": "bar",
+                "fontFace": "Consolas",
+                "fontSize": 12,
+                "guid": "{78e390db-1bff-4533-9d7c-20f53d8bafa1}",
+                "historySize": 9001,
+                "icon": "https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png",
+                "name": "docker",
+                "padding": "0, 0, 0, 0",
+                "useAcrylic": true, 
+                "acrylicOpacity": 0.75,
+                "snapOnInput": true,
+
+    }
+```
+
+
+
 
 ## Dokumentation
 
@@ -131,6 +178,10 @@ Ich muss sagen bis man das versteht braucht man etwas länger als erwartet. <br>
 In der Schule sah alles so einfach aus aber ist es nicht. Es ist vorallem am Anfang sehr verwirrend.<br>
 Nur bis man da alles versteht braucht es eine grossen Aufwand. 
 <br>
+
+Man muss zuerst sich bei gitbash sich auf docker einloggen. das geht mit dem Befehl "docker login" <br>
+Das erste mal wird es eine Fehlermeldung geben. 
+
 
 Mein Projekt geht darüber, das ich eine Umgebung aufbaue mit Ticketsystem wo die einzelne User eingerichtet sind. <br>
 Zusätzlich wird ein E-Mail Dienst eingerichtet und es wird gemonitort.
@@ -152,6 +203,8 @@ Nicht nur wurde ein User hinzugefügt, sondern ich habe mich mit der Dockumentat
 * [Was ist Kubernets](https://kubernetes.io/de/docs/concepts/overview/what-is-kubernetes/)
 
 * [Was ist Docker](https://www.ionos.de/digitalguide/server/knowhow/was-ist-docker/)
+
+* [good to know](https://dev.to/masoudr/setup-docker-with-windows-terminal-and-oh-my-zsh-29j5)
 
 * [Docker docs](https://docs.docker.com/)
 
