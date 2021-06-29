@@ -144,10 +144,10 @@ Danach muss es deklariert werden, das es unterschieden werden kann. <br>
 Danach wird auf das Verzeichnis mit dem dockerfile navigiert. <br>
 <strong>Es darf nicht der Tagname TEST verwendet werden. Es wird nicht gepusht am ende sondern ist nur lokal auf dem Desktop! </strong> <br>
 Der tag ist gespeichert. Das heisst wenn es gepusht wird, muss dieser tag verwendet werden. <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_3.png" width=60% height=60%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_3.png" width=110% height=110%> <br>
 
 das geht mit diesem Befehl. der ist folgend aufgebaut. Am anfang kommt docker push danach der Account wo es veröffentlicht werden soll. also in diesem Beispiel "thesimoms" zusätzlich noch in welches respo. also "/lb2" und am ende welche Version also welcher tag ":v1". <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_4.png" width=70% height=70%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_4.png" width=110% height=110%> <br>
 
 
 
