@@ -136,10 +136,10 @@ Bevor das genau angeschaut wird muss zuerst der Docker Desktop installiert werde
 
 Zuerst muss ein resposentory im Docker Hub erstellt werden.
 Als zweites muss ein Respo erstellt werden. <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_1.png" width=40% height=40%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_1.png" width=70% height=70%> <br>
 
 Danach muss es deklariert werden, das es unterschieden werden kann. <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_2.png" width=40% height=40%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_2.png" width=60% height=60%> <br>
 
 Danach wird auf das Verzeichnis mit dem dockerfile navigiert. <br>
 <br>
