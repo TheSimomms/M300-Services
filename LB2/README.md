@@ -143,7 +143,30 @@ wsl --list --verbose
 
 Es wäre Optimal wenn  Windows Terminal installiert wird. [Anleitung](https://github.com/TheSimomms/M300-Services/tree/main/LB2#good-to-know)<br>
 
+## Ubuntu einrichten
 
+Als erstes bevor man die updates macht gibt man den folgenden Befehl ein. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/u_1.png" width=100% height=100%> <br>
+
+```
+sudo visudo
+```
+<br>
+In der untersten Zeile muss das "NOPASSWD:" eingefügt werden. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/u_2.png" width=100% height=100%> <br>
+
+```
+%sudo   ALL=(ALL:ALL) NOPASSWD: ALL
+```
+Als nächstes kommen die Updates
+<br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/k_6.png" width=100% height=100%> <br>
+
+```
+sudo apt update && sudo apt upgrade -y
+```
+Danach muss wieder der Docker Desktop gestartet werden und das gemacht werden wo auf dem Bild steht.<br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/u_4.png" width=60% height=60%> <br>
 
 
 ## Docker Desktop installation
