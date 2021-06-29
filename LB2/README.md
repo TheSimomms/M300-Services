@@ -146,7 +146,7 @@ Es wäre Optimal wenn  Windows Terminal installiert wird. [Anleitung](https://gi
 ## Ubuntu einrichten
 
 Als erstes bevor man die updates macht gibt man den folgenden Befehl ein. <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/u_1.png" width=100% height=100%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/u_1.png" width=50% height=50%> <br>
 
 ```
 sudo visudo
