@@ -137,20 +137,17 @@ Bevor das genau angeschaut wird muss zuerst der Docker Desktop installiert werde
 Git bash ist nicht dafür geeignet, das man docker darüber laufen lässt. Generell Windows nicht.
 Es gibt eine bessere Variante als gitbash. Dafür muss man den Windows Store öffnen und die Applikation "Windows Terminal" installieren.
 Windows Terminal ist powershell nur in besser. Es standardmässig Azure Cloud Powershell etc installiert. Eigentlich ist es nichts anderes als Powershell plus eine Remote shell. Man kann sich damit auf den respi, Vms etc verbinden. Zusätzlich ist eine WSL2 standardmässig mitgegeben. Das ist wichtig, da WSL zwingend für Docker gebraucht wird.  <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_1.png" width=50% height=50%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_1.png" width=70% height=70%> <br>
 
 Wenn es eingerichtet worden ist, muss ein Verzeichnis ausgewählt werden, wo die daten abgelegt werden. <br>
 Zuerst muss man in die Einstellungen gehen und die JSON-Datei öffnen. <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_2.png" width=50% height=50%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_2.png" width=70% height=70%> <br>
 
-Danach muss in diesem Bereich eingefügt werden und gespeichert werden. Das war alles <br>
+Danach muss in diesem Bereich eingefügt werden und gespeichert werden. Das war alles.  <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_3.png" width=70% height=70%> <br>
 
-
-```
-
-     
+```   
      {
-
                 "closeOnExit": "never",
                 "commandline": "wsl ~",
                 "cursorColor": "#FFFFFF",
@@ -165,7 +162,6 @@ Danach muss in diesem Bereich eingefügt werden und gespeichert werden. Das war 
                 "useAcrylic": true, 
                 "acrylicOpacity": 0.75,
                 "snapOnInput": true,
-
     }
 ```
 
