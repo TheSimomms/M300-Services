@@ -10,6 +10,10 @@
 
 * [Docker Installation](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-desktop-installation)
 
+* [good to know](https://github.com/TheSimomms/M300-Services/tree/main/LB2#good-to-know)
+
+* [Docker hub](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-hub)
+
 * [Dokumentation](https://github.com/TheSimomms/M300-Services/tree/main/LB2#dokumentation)
 
 * [Quellen](https://github.com/TheSimomms/M300-Services/tree/main/LB2#quellen)
@@ -47,7 +51,7 @@ Ich habe mich genauer mit dem Desktop auseinander gesetzt es war sehr verwirrend
 
 Habe mich heute stark mit Docker den Befehlen und mit dem Desktop auseinander gesetzt.<br>
 
-Je länger ich daran gesessen bin desto mehr fragen hatte ich. Aber mit der Zeit kam ich immer mehr draus. --> [good to know](https://github.com/TheSimomms/M300-Services/tree/main/LB2#good-to-know)
+Je länger ich daran gesessen bin desto mehr fragen hatte ich. Aber mit der Zeit kam ich immer mehr draus. --> [good to know](https://github.com/TheSimomms/M300-Services/tree/main/LB2#good-to-know), [Docker hub](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-hub)
 
 ### 30.06.2021
 
@@ -119,8 +123,44 @@ Auf diesem Symbol muss ein Rechtsklick gemacht werden und Settings ausgewählt w
 Wie man den Desktop genau einrichtet wird [hier](https://docs.docker.com/docker-for-windows/#docker-settings-dialog) beschrieben. 
 
 ## good to know
+Git bash ist nicht dafür geeignet, das man docker darüber laufen lässt. Generell Windows nicht.
+Es gibt eine bessere Variante als gitbash. Dafür muss man den Windows Store öffnen und die Applikation "Windows Terminal" installieren.
+Windows Terminal ist powershell nur in besser. Es standardmässig Azure Cloud Powershell etc installiert. Eigentlich ist es nichts anderes als Powershell plus eine Remote shell. Man kann sich damit auf den respi, Vms etc verbinden. Zusätzlich ist eine WSL2 standardmässig mitgegeben. Das ist wichtig, da WSL zwingend für Docker gebraucht wird.  <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_1.png" width=70% height=70%> <br>
+
+Wenn es eingerichtet worden ist, muss ein Verzeichnis ausgewählt werden, wo die daten abgelegt werden. <br>
+Zuerst muss man in die Einstellungen gehen und die JSON-Datei öffnen. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_2.png" width=70% height=70%> <br>
+
+Danach muss in diesem Bereich eingefügt werden und gespeichert werden. Das war alles.  <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_3.png" width=70% height=70%> <br>
+
+<br>
+
+```   
+     {
+                "closeOnExit": "never",
+                "commandline": "wsl ~",
+                "cursorColor": "#FFFFFF",
+                "cursorShape": "bar",
+                "fontFace": "Consolas",
+                "fontSize": 12,
+                "guid": "{78e390db-1bff-4533-9d7c-20f53d8bafa1}",
+                "historySize": 9001,
+                "icon": "https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png",
+                "name": "docker",
+                "padding": "0, 0, 0, 0",
+                "useAcrylic": true, 
+                "acrylicOpacity": 0.75,
+                "snapOnInput": true,
+    }
+```
+
+## Docker Hub
+
+
 Die ganze Docker Desktop geschichte ist schwiriger als erwartet. Wichtige Befehle die Verwendet werden. <br>
-Bevor das genau angeschaut wird muss zuerst der Docker Desktop installiert werden. [Docker Desktop](#)
+Bevor das genau angeschaut wird muss zuerst der Docker Desktop installiert werden. [Docker Desktop](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-desktop-installation)
 
 | Befehl                                | Anwendung                                                    | Beispiel                    |
 | ------------------------------------- | ------------------------------------------------------------ | --------------------------- |
@@ -157,42 +197,6 @@ Es dauert einen Moment bis es auf dockerhub vorhanden ist. <br>
 
 
 <br>
-
-Git bash ist nicht dafür geeignet, das man docker darüber laufen lässt. Generell Windows nicht.
-Es gibt eine bessere Variante als gitbash. Dafür muss man den Windows Store öffnen und die Applikation "Windows Terminal" installieren.
-Windows Terminal ist powershell nur in besser. Es standardmässig Azure Cloud Powershell etc installiert. Eigentlich ist es nichts anderes als Powershell plus eine Remote shell. Man kann sich damit auf den respi, Vms etc verbinden. Zusätzlich ist eine WSL2 standardmässig mitgegeben. Das ist wichtig, da WSL zwingend für Docker gebraucht wird.  <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_1.png" width=70% height=70%> <br>
-
-Wenn es eingerichtet worden ist, muss ein Verzeichnis ausgewählt werden, wo die daten abgelegt werden. <br>
-Zuerst muss man in die Einstellungen gehen und die JSON-Datei öffnen. <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_2.png" width=70% height=70%> <br>
-
-Danach muss in diesem Bereich eingefügt werden und gespeichert werden. Das war alles.  <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_3.png" width=70% height=70%> <br>
-
-<br>
-
-```   
-     {
-                "closeOnExit": "never",
-                "commandline": "wsl ~",
-                "cursorColor": "#FFFFFF",
-                "cursorShape": "bar",
-                "fontFace": "Consolas",
-                "fontSize": 12,
-                "guid": "{78e390db-1bff-4533-9d7c-20f53d8bafa1}",
-                "historySize": 9001,
-                "icon": "https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png",
-                "name": "docker",
-                "padding": "0, 0, 0, 0",
-                "useAcrylic": true, 
-                "acrylicOpacity": 0.75,
-                "snapOnInput": true,
-    }
-```
-
-
-
 
 ## Dokumentation
 
