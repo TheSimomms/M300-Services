@@ -134,6 +134,26 @@ Bevor das genau angeschaut wird muss zuerst der Docker Desktop installiert werde
 | docker exec -i -t container_name bash | Shell in einem Container öffnen.                             | docker exec -i -t x345 bash |
 <br>
 
+Zuerst muss ein resposentory im Docker Hub erstellt werden.
+Als zweites muss ein Respo erstellt werden. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_1.png" width=40% height=40%> <br>
+
+Danach muss es deklariert werden, das es unterschieden werden kann. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_2.png" width=40% height=40%> <br>
+
+Danach wird auf das Verzeichnis mit dem dockerfile navigiert. <br>
+<strong>Es darf nicht der Tagname TEST verwendet werden. Es wird nicht gepusht am ende sondern ist nur lokal auf dem Desktop! </strong> <br>
+Der tag ist gespeichert. Das heisst wenn es gepusht wird, muss dieser tag verwendet werden. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_3.png" width=60% height=60%> <br>
+
+das geht mit diesem Befehl. der ist folgend aufgebaut. Am anfang kommt docker push danach der Account wo es veröffentlicht werden soll. also in diesem Beispiel "thesimoms" zusätzlich noch in welches respo. also "/lb2" und am ende welche Version also welcher tag ":v1". <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_4.png" width=70% height=70%> <br>
+
+
+
+
+<br>
+
 Git bash ist nicht dafür geeignet, das man docker darüber laufen lässt. Generell Windows nicht.
 Es gibt eine bessere Variante als gitbash. Dafür muss man den Windows Store öffnen und die Applikation "Windows Terminal" installieren.
 Windows Terminal ist powershell nur in besser. Es standardmässig Azure Cloud Powershell etc installiert. Eigentlich ist es nichts anderes als Powershell plus eine Remote shell. Man kann sich damit auf den respi, Vms etc verbinden. Zusätzlich ist eine WSL2 standardmässig mitgegeben. Das ist wichtig, da WSL zwingend für Docker gebraucht wird.  <br>
@@ -146,6 +166,7 @@ Zuerst muss man in die Einstellungen gehen und die JSON-Datei öffnen. <br>
 Danach muss in diesem Bereich eingefügt werden und gespeichert werden. Das war alles.  <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_3.png" width=70% height=70%> <br>
 
+<br>
 ```   
      {
                 "closeOnExit": "never",
