@@ -8,7 +8,11 @@
 
 * [Was ist Kubernetes](https://github.com/TheSimomms/M300-Services/tree/main/LB2#was-ist-kubernetes)
 
+* [WSL2](https://github.com/TheSimomms/M300-Services/tree/main/LB2#WSL2)
+
 * [Docker Installation](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-desktop-installation)
+
+* [Kubernets Installation](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-desktop-installation)
 
 * [good to know](https://github.com/TheSimomms/M300-Services/tree/main/LB2#good-to-know)
 
@@ -97,6 +101,50 @@ Diese Cluster können Hosts in öffentlichen, privaten oder hybriden Clouds habe
 
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/kubernetes_logo.png" width=50% height=50%> <br>
 
+## WSL2 
+
+WLS2 muss aktiviert werden, sonst wird Kubernets nicht funktionieren. <br>
+Die folgenden Befehle müssen mit Adminrechte ausgeführt werden. <br>
+```
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/k_2.png" width=100% height=100%> <br>
+
+
+```
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/k_1.png" width=100% height=100%> <br>
+
+ALs nächstes muss eine MSI heruntergeladen werden und installiert werden. [link](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) (Es gibt nur x64) <br>
+
+Dieser Befehl muss ausgeführt werden, während die Linux installation am installierene ist.<br>
+```
+wsl --set-default-version 2
+```
+
+Als nächstes muss der Windows Store geöffnet werden und es muss "Ubuntu" eingegeben werden. <br>
+Hier kann nach freier Wahl eine Version ausgesucht werden., Ich würde aber nicht die neuste Version wählen. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/k_3.png" width=100% height=100%> <br>
+
+Wenn alles installiert ist muss die Ubuntu Version gestartet werden.
+und es muss ein Benutzername und ein Password definiert werden. <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/k_4.png" width=100% height=100%> <br>
+
+Als letztes muss geprüft werden, ob alles auf der Version "2" ist. <br>
+
+```
+wsl --list --verbose
+```
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/k_5.png" width=70% height=70%> <br>
+
+
+
+Es wäre Optimal wenn  Windows Terminal installiert wird. [Anleitung](https://github.com/TheSimomms/M300-Services/tree/main/LB2#good-to-know)<br>
+
+
+
+
 ## Docker Desktop installation
 
 Der erste Schritt ist, das [Docker](https://www.docker.com/products/docker-desktop) heruntergeladen wird. <br>
@@ -158,9 +206,8 @@ Danach muss in diesem Bereich eingefügt werden und gespeichert werden. Das war 
 
 ## Docker Hub
 
-
 Die ganze Docker Desktop geschichte ist schwiriger als erwartet. Wichtige Befehle die Verwendet werden. <br>
-Bevor das genau angeschaut wird muss zuerst der Docker Desktop installiert werden. [Docker Desktop](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-desktop-installation)
+Bevor das genau angeschaut wird muss zuerst der Docker Desktop installiert werden. [Docker Desktop](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-desktop-installation) <br>
 
 | Befehl                                | Anwendung                                                    | Beispiel                    |
 | ------------------------------------- | ------------------------------------------------------------ | --------------------------- |
@@ -198,6 +245,12 @@ Es dauert einen Moment bis es auf dockerhub vorhanden ist. <br>
 
 <br>
 
+## Kubernets installation
+
+
+
+<br>
+
 ## Dokumentation
 
 Ich muss sagen bis man das versteht braucht man etwas länger als erwartet. <br>
@@ -229,6 +282,8 @@ Nicht nur wurde ein User hinzugefügt, sondern ich habe mich mit der Dockumentat
 * [Was ist Kubernets](https://kubernetes.io/de/docs/concepts/overview/what-is-kubernetes/)
 
 * [Was ist Docker](https://www.ionos.de/digitalguide/server/knowhow/was-ist-docker/)
+
+* [Kubernets install](https://kubernetes.io/blog/2020/05/21/wsl-docker-kubernetes-on-the-windows-desktop/)
 
 * [good to know](https://dev.to/masoudr/setup-docker-with-windows-terminal-and-oh-my-zsh-29j5)
 
