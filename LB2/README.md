@@ -169,6 +169,7 @@ Danach muss in diesem Bereich eingefügt werden und gespeichert werden. Das war 
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/g_3.png" width=70% height=70%> <br>
 
 <br>
+
 ```   
      {
                 "closeOnExit": "never",
