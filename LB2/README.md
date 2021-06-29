@@ -160,13 +160,19 @@ In der untersten Zeile muss das "NOPASSWD:" eingefügt werden. <br>
 ```
 Als nächstes kommen die Updates
 <br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/k_6.png" width=100% height=100%> <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/k_6.png" width=50% height=50%> <br>
 
 ```
 sudo apt update && sudo apt upgrade -y
 ```
 Danach muss wieder der Docker Desktop gestartet werden und das gemacht werden wo auf dem Bild steht.<br>
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/u_4.png" width=60% height=60%> <br>
+Fals es noch nicht installiert worden ist. [Anleitung](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-hub) <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/u_4.png" width=80% height=80%> <br>
+
+Der Abschnitt ist noch nicht zu ende. Es muss noch überprüft werden ob alles funktioniert. <br>
+Der Befehl "docker version" muss eingegeben werden und überprüft werden ob "docker cli" und domän cli" installiert ist. und das gleiche für "kubctl version"
+
+<br>
 
 
 ## Docker Desktop installation
@@ -269,7 +275,9 @@ Es dauert einen Moment bis es auf dockerhub vorhanden ist. <br>
 
 <br>
 
-## Kubernets installation
+## Kubernets konfiguration
+
+
 
 
 
