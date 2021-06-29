@@ -151,7 +151,9 @@ Der tag ist gespeichert. Das heisst wenn es gepusht wird, muss dieser tag verwen
 das geht mit diesem Befehl. der ist folgend aufgebaut. Am anfang kommt docker push danach der Account wo es veröffentlicht werden soll. also in diesem Beispiel "thesimoms" zusätzlich noch in welches respo. also "/lb2" und am ende welche Version also welcher tag ":v1". <br>
 <img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_4.png" width=110% height=110%> <br>
 
+Es dauert einen Moment bis es auf dockerhub vorhanden ist. <br>
 
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/hub_4.png" width=50% height=50%> <br>
 
 
 <br>
