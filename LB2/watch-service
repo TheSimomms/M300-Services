@@ -1,0 +1,10 @@
+#!/bin/bash
+
+service=$@
+/bin/systemctl -q is-active "$service.service"
+status=$?
+if [ "$status" == 0 ]; then
+    echo "OK"
+else
+   mail -s "Docker down" roman_signer@hotmail.com
+fi

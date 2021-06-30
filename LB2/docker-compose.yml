@@ -1,42 +1,29 @@
-version: '3'
-
+version: "2.0"
 services:
-
-  osticket:
-    build: .
-    image: osticket/osticket
-    environment:
-      - MYSQL_HOST=mysql
-      - MYSQL_DATABASE=osticket
-      - MYSQL_USER=osticket
-      - MYSQL_PASSWORD=0T1cket
-
-      # CHANGE ME
-      - INSTALL_SECRET=secret
-
-      - LANGUAGE=fa
-
-    links:
-      - mysql:mysql
+  php:
+    build: './php/'
+    networks:
+      - backend
+    volumes:
+      - ./public_html/:/var/www/html/
+  apache:
+    build: './apache/'
+    depends_on:
+      - php
+      - mysql
+    networks:
+      - frontend
+      - backend
     ports:
-      - "5335:80"
-    restart: always
-
+      - "8080:80"
+    volumes:
+      - ./public_html/:/var/www/html/
   mysql:
-    image: mariadb
+    image: mysql:5.6.40
+    networks:
+      - backend
     environment:
-       - MYSQL_RANDOM_ROOT_PASSWORD=true
-       - MYSQL_DATABASE=osticket
-       - MYSQL_USER=osticket
-       - MYSQL_PASSWORD=0T1cket
-    restart: always
-    
-     mysql:
-    image: mariadb
-    environment:
-       - MYSQL_RANDOM_ROOT_PASSWORD=true
-       - MYSQL_DATABASE=osticket
-       - MYSQL_USER=Steiner
-       - MYSQL_PASSWORD=1234
-       - LANGUAGE=de
-    restart: always
+      - MYSQL_ROOT_PASSWORD=rootpassword
+networks:
+  frontend:
+  backend:
