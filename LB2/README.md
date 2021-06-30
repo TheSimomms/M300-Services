@@ -18,6 +18,8 @@
 
 * [Docker hub](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-hub)
 
+* [Dockerfile aufbau](https://github.com/TheSimomms/M300-Services/tree/main/LB2#dockerfile-aufbau)
+
 * [Dokumentation](https://github.com/TheSimomms/M300-Services/tree/main/LB2#dokumentation)
 
 * [Quellen](https://github.com/TheSimomms/M300-Services/tree/main/LB2#quellen)
@@ -55,11 +57,11 @@ Ich habe mich genauer mit dem Desktop auseinander gesetzt es war sehr verwirrend
 
 Habe mich heute stark mit Docker den Befehlen und mit dem Desktop auseinander gesetzt.<br>
 
-Je länger ich daran gesessen bin desto mehr fragen hatte ich. Aber mit der Zeit kam ich immer mehr draus. --> [good to know](https://github.com/TheSimomms/M300-Services/tree/main/LB2#good-to-know), [Docker hub](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-hub)
+Je länger ich daran gesessen bin desto mehr fragen hatte ich. Aber mit der Zeit kam ich immer mehr draus. --> [good to know](https://github.com/TheSimomms/M300-Services/tree/main/LB2#good-to-know), [Docker hub](https://github.com/TheSimomms/M300-Services/tree/main/LB2#docker-hub), [WSL2](https://github.com/TheSimomms/M300-Services/tree/main/LB2#WSL2)
 
 ### 30.06.2021
 
-* Platzhalter
+Ich habe bis früh in den Morgen gearbeitet. Doch am gleichen Tag habe ich noch [kubernets install](#)
 
 ### 01.07.2021
 
@@ -74,11 +76,10 @@ Je länger ich daran gesessen bin desto mehr fragen hatte ich. Aber mit der Zeit
 * Platzhalter
 
 ### 05.07.2021
-Heute ist die Abgabe
 
-### 12.07.2021
-An diesem Datum ist der Sporttag und mein Geburtstag :D
-
+* Platzhalter
+<br>
+<br>
 ## Was ist Docker
 
 Der Begriff "Docker" kann sich auf verschiedene Dinge beziehen. <br>
@@ -275,14 +276,39 @@ Es dauert einen Moment bis es auf dockerhub vorhanden ist. <br>
 
 <br>
 
-## Kubernets konfiguration
+## Kubernets installation & konfiguration
 
+Von github muss kubernets installiert werden <br>
 
-
-
-
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/k_7.png" width=50% height=50%> <br>
+```
+curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/v0.7.0/kind-linux-amd64
+```
+Die Berechtigung muss gesetzt werden <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/k_8.png" width=50% height=50%> <br>
+```
+chmod +x ./kind
+```
+Das Verzeichn is muss freigeschalten werden <br>
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/k_9.png" width=50% height=50%> <br>
+```
+sudo mv ./kind /usr/local/bin/
+```
 <br>
 
+## Dockerfile Aufbau
+
+| Befehl                                | Anwendung                                                    | Beispiel                    |
+| ------------------------------------- | ------------------------------------------------------------ | --------------------------- |
+| FROM                                  | Dieser muss ganz oben stehen. Das zeigt an welches Image das Grundimage ist | FROM banian/php.      |
+| MAINTAINER                            | Author ins Image hinzufügen                                  | MAINTAINER Simon Steiner <simon.steiner @edu.tbz.ch>    |
+| RUN                                   | Führt die Shell aus                                          | RUN sudo apt-get install -y apache2           |
+| CMD                                   | wird bei jedem Container ausgeführt. nur einmal möglich pro file  | CMD echo „Hello world“           |
+| EXPOSE                                | Ports freigabe                                               | EXPOSE 80        |
+| ADD / COPY                            | kopiert files                                                | ADD directory1 /var/www/directory1   |
+| WORKDIR                               | wechsel von root zu normalen ausführung dabei kann ein Relativer Pfad verwendet werden  | WORKDIR vhosts/www.meine-seite.ch        |
+
+<br>
 ## Dokumentation
 
 Ich muss sagen bis man das versteht braucht man etwas länger als erwartet. <br>
@@ -303,6 +329,7 @@ Zuerst wurde das Ticketing System eingerichtet. Ich bin in das File docker-compo
 
 Nicht nur wurde ein User hinzugefügt, sondern ich habe mich mit der Dockumentation von Mariadb stark auseinander gesetzt und habe entschieden, das ich noch die Sprache anpasse. 
 
+<br>
 ## Quellen
 
 * [Was ist Kubernets - Logo](https://www.freelogovectors.net/kubernetes-logo/)
@@ -313,9 +340,11 @@ Nicht nur wurde ein User hinzugefügt, sondern ich habe mich mit der Dockumentat
 
 * [Was ist Kubernets](https://kubernetes.io/de/docs/concepts/overview/what-is-kubernetes/)
 
-* [Was ist Docker](https://www.ionos.de/digitalguide/server/knowhow/was-ist-docker/)
-
 * [Kubernets install](https://kubernetes.io/blog/2020/05/21/wsl-docker-kubernetes-on-the-windows-desktop/)
+
+* [Aufbau Docker](https://www.ab-heute-programmieren.de/docker-teil-4-das-dockerfile/)
+
+* [Was ist Docker](https://www.ionos.de/digitalguide/server/knowhow/was-ist-docker/)
 
 * [good to know](https://dev.to/masoudr/setup-docker-with-windows-terminal-and-oh-my-zsh-29j5)
 

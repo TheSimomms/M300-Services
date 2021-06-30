@@ -1,5 +1,5 @@
 FROM banian/php
-MAINTAINER Pooya Parsa <pooya@pi0.ir>
+MAINTAINER simon steiner <simon.steiner@swisspro.ch>
 
 # Install packages
 RUN apt-get update && \
@@ -7,7 +7,7 @@ RUN apt-get update && \
     rm -rv /var/lib/apt
 
 # Set upsteam repo
-ENV GIT_REPO=https://github.com/osTicket/osTicket
+ENV GIT_REPO=https://github.com/TheSimomms/M300-Services.git
 
 # Scripts
 COPY bin /bin
