@@ -63,21 +63,18 @@ Je länger ich daran gesessen bin desto mehr fragen hatte ich. Aber mit der Zeit
 
 Ich habe bis früh in den Morgen gearbeitet. Doch am gleichen Tag habe ich noch [kubernets install](#)
 
-### 01.07.2021
-
-* Platzhalter
-
-### 02.07.2021
-
-* Platzhalter
 
 ### 03.07.2021
 
-* Platzhalter
+* Heute mache ich noch kleine Anpassungen am Skript. 
+
+### 04.07.2021
+
+* Ich troubleshote heute den forbidden fehler. Ich muss einem Verzeichnis mehr berechtigungen geben. 
 
 ### 05.07.2021
 
-* Platzhalter
+* heute ist die Abgabe und ich mache noch das Readme fertig
 <br>
 <br>
 ## Was ist Docker
@@ -309,25 +306,20 @@ sudo mv ./kind /usr/local/bin/
 | WORKDIR                               | wechsel von root zu normalen ausführung dabei kann ein Relativer Pfad verwendet werden  | WORKDIR vhosts/www.meine-seite.ch        |
 
 <br>
-## Dokumentation
+## Error
 
-Ich muss sagen bis man das versteht braucht man etwas länger als erwartet. <br>
-In der Schule sah alles so einfach aus aber ist es nicht. Es ist vorallem am Anfang sehr verwirrend.<br>
-Nur bis man da alles versteht braucht es eine grossen Aufwand. 
-<br>
+Ich bin auf ein paar Fehler gestossen. <br>
+Ich konnte alles beheben bis auf etwas.<>
 
-Man muss zuerst sich bei gitbash sich auf docker einloggen. das geht mit dem Befehl "docker login" <br>
-Das erste mal wird es eine Fehlermeldung geben. 
+<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/f_2.png" width=50% height=50%> <br>
 
+Ich habe X documentationen angeschaut und das passende wo drin steht angepasst. <br>
+Unter anderem habe ich einzelne Ordner mit "777" berechtigt. oder habe das Verzeichnis komplett neu erstellt. Ich habe alles neuaufgebaut mit docker image. 
 
-Mein Projekt geht darüber, das ich eine Umgebung aufbaue mit Ticketsystem wo die einzelne User eingerichtet sind. <br>
-Zusätzlich wird ein E-Mail Dienst eingerichtet und es wird gemonitort.
+Mit docker image habe ich vieles erstellt. <br>
+Das was mir am ende das genickt gebrochen hat, das ich nicht alles zum laufen gekriegt habe ist da ich es mal wieder komplett selbst gemacht habe und dann sind solche Fehler dabei aufgetreten. <br>
+Nächstes mal werde ih nicht wieder einfach alles selber machen sondern mich mehr auf bereits existirende Arbeiten weiter aufbauen.
 
-Zuerst wurde das Ticketing System eingerichtet. Ich bin in das File docker-compose.yml gegangen und habe Users hinzugefügt. <br>
-
-<img src="https://github.com/TheSimomms/M300-Services/blob/main/LB2/images/doc_1.png" width=50% height=50%> <br>
-
-Nicht nur wurde ein User hinzugefügt, sondern ich habe mich mit der Dockumentation von Mariadb stark auseinander gesetzt und habe entschieden, das ich noch die Sprache anpasse. 
 
 <br>
 ## Quellen
@@ -349,5 +341,11 @@ Nicht nur wurde ein User hinzugefügt, sondern ich habe mich mit der Dockumentat
 * [good to know](https://dev.to/masoudr/setup-docker-with-windows-terminal-and-oh-my-zsh-29j5)
 
 * [Docker docs](https://docs.docker.com/)
+
+* [Webseite](https://www.free-css.com/free-css-templates/page259/the-town)
+
+* [Error](https://stackflow.com/)
+
+* [Error](https://stackoverflow.com/questions/46266527/could-not-reliably-determine-the-servers-fully-qualified-domain-name-how-to)
 
 * [Networking](https://docs.docker.com/config/containers/container-networking/)

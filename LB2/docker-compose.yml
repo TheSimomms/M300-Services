@@ -5,7 +5,7 @@ services:
     networks:
       - backend
     volumes:
-      - ./public_html/:/var/www/html/
+      - \Users\sppm0070\Documents\GitHub\M300-Services\LB2\src /var/www/html/
   apache:
     build: './apache/'
     depends_on:
@@ -17,7 +17,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./public_html/:/var/www/html/
+      - \Users\sppm0070\Documents\GitHub\M300-Services\LB2\src /var/www/html/
   mysql:
     image: mysql:5.6.40
     networks:
